@@ -1,0 +1,3041 @@
+---
+layout: null
+---
+<!DOCTYPE html>
+<html lang="en" translate="no">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <link rel="manifest" href="manifest.json">
+  <meta name="theme-color" content="#4361EE">
+<link rel="apple-touch-icon" href="icon.png">
+  <meta name="google" content="notranslate">
+  <meta name="google-site-verification" content="9gOCP1BNGvR_eHFDKc35dbylRSiDkca9wggrGUSRfWQ" />
+  
+  <!-- Primary Meta Tags (SEO) -->
+  <title>TTC Quiz | Free Online Chapter-wise Quizzes for Students</title>
+  <meta name="title" content="TTC Quiz | Free Online Chapter-wise Quizzes for Students">
+  <meta name="description" content="Master your subjects with TTC Quiz. Free, instant-scored online quizzes for Class 6 to 10 with detailed explanations. Created by Tushar Tuition Classes, Wardha.">
+  <meta name="keywords" content="TTC Quiz, online quiz for students, Class 7 Maths quiz, Class 10 Science quiz, Class 6 quizzes, CBSE quizzes, Tushar Tuition Classes, Wardha">
+  <meta name="author" content="Tushar Tuition Classes">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400..800&family=Fredoka+One&family=Nunito:wght@400;600;700;800;900&family=Righteous&family=DM+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  
+  <!-- 🧠 GEO & SEO STRUCTURED DATA (JSON-LD) 🧠 -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Organization",
+        "@id": "{{ site.url }}{{ site.baseurl }}/#organization",
+        "name": "Tushar Tuition Classes (TTC)",
+        "url": "{{ site.url }}{{ site.baseurl }}",
+        "logo": "https://i.postimg.cc/x9mDND2Q/Ttc-logo.png",
+        "description": "Tushar Tuition Classes provides premium offline tuition and free online CBSE-aligned quizzes for Class 6 to 10 students in Wardha."
+      },
+      {
+        "@type": "WebSite",
+        "@id": "{{ site.url }}{{ site.baseurl }}/#website",
+        "url": "{{ site.url }}{{ site.baseurl }}",
+        "name": "TTC Quiz Platform",
+        "publisher": {
+          "@id": "{{ site.url }}{{ site.baseurl }}/#organization"
+        }
+      },
+      {
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "What is the TTC Quiz Platform?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "The TTC Quiz Platform is a free online educational resource created by Tushar Tuition Classes. It offers chapter-wise MCQ quizzes for Class 6 to Class 10 students, complete with instant scores and detailed explanations."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Are these quizzes aligned with the CBSE syllabus?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes, all TTC quizzes are meticulously designed to align with the latest CBSE syllabus and NCERT textbooks, making them perfect for school exam preparation and revision."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Do I need to pay to take these quizzes?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "No! The online quizzes provided on the TTC Quiz Platform are 100% free for all students to help democratize quality education."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How do I get my quiz results?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Upon completing a quiz, you instantly receive your score, a complete breakdown of right and wrong answers, and the option to download a comprehensive PDF report of your performance."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Where is Tushar Tuition Classes located?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Tushar Tuition Classes is a premier offline coaching institute located in Wardha, helping students achieve academic excellence across core subjects."
+            }
+          }
+        ]
+      }
+    ]
+  }
+  </script>
+
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    
+    :root {
+      --blue:     #4361EE;
+      --orange:   #FF6B35;
+      --lime:     #C8FF00;
+      --pink:     #FF3D8A;
+      --white:    #FFFFFF;
+      --off:      #F5F4FF;
+      --dark:     #111118;
+      --grey:     #6B6B80;
+      --light:    #EDEDF7;
+      --green:    #25D366;
+      --bg-color: #F8F9FA;
+    }
+    
+    body {
+      font-family: 'DM Sans', sans-serif;
+      background: var(--bg-color);
+      background-image: radial-gradient(rgba(67, 97, 238, 0.05) 1px, transparent 1px);
+      background-size: 24px 24px;
+      color: var(--dark);
+      line-height: 1.6;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    /* Mobile-first premium header */
+    header {
+      background: rgba(255, 255, 255, 0.86);
+      backdrop-filter: blur(18px);
+      -webkit-backdrop-filter: blur(18px);
+      border-bottom: 1px solid rgba(17, 17, 24, 0.08);
+      padding: 12px 16px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      box-shadow: 0 12px 32px rgba(17, 17, 24, 0.06);
+    }
+    
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      text-decoration: none;
+    }
+    .brand img {
+      width: 42px;
+      height: 42px;
+      border-radius: 50%;
+      border: 2px solid rgba(17, 17, 24, 0.08);
+      box-shadow: 0 8px 18px rgba(0,0,0,0.08);
+    }
+    .brand-text {
+      font-family: 'Fredoka One', cursive;
+      font-size: 21px;
+      color: var(--dark);
+      line-height: 1;
+    }
+    .brand-text span {
+      color: var(--blue);
+    }
+    .brand-sub {
+      font-size: 11px;
+      font-weight: 800;
+      color: var(--grey);
+      letter-spacing: 1.7px;
+      text-transform: uppercase;
+      margin-top: 2px;
+    }
+
+    .header-cta {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      background: var(--dark);
+      color: var(--white);
+      text-decoration: none;
+      font-weight: 800;
+      font-size: 12px;
+      padding: 10px 14px;
+      border-radius: 50px;
+      box-shadow: 0 4px 12px rgba(17, 17, 24, 0.15);
+      transition: all 0.3s ease;
+      white-space: nowrap;
+    }
+    .header-cta:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 6px 16px rgba(17, 17, 24, 0.25);
+      background: var(--blue);
+    }
+    @media (min-width: 600px) {
+      header { padding: 16px 5%; }
+      .brand { gap: 14px; }
+      .brand img { width: 46px; height: 46px; }
+      .brand-text { font-size: 24px; }
+      .header-cta { font-size: 14px; padding: 12px 24px; }
+    }
+
+    /* Premium mobile-first hero section */
+    .hero-wrapper {
+      position: relative;
+      max-width: 980px;
+      margin: 0 auto;
+      padding: 30px 18px 28px;
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 16px;
+      align-items: center;
+      overflow: hidden;
+      isolation: isolate;
+    }
+    .hero-wrapper::before {
+      content: '';
+      position: absolute;
+      inset: 12px 12px auto 12px;
+      height: 82%;
+      border: 2px solid rgba(17, 17, 24, 0.06);
+      border-radius: 28px;
+      background:
+        linear-gradient(135deg, rgba(255,255,255,0.92), rgba(255,255,255,0.58)),
+        repeating-linear-gradient(120deg, rgba(67,97,238,0.08) 0 1px, transparent 1px 18px);
+      z-index: -2;
+    }
+    .hero-wrapper::after {
+      content: '';
+      position: absolute;
+      left: 24px;
+      right: 24px;
+      top: 26px;
+      height: 5px;
+      border-radius: 999px;
+      background: linear-gradient(90deg, var(--blue), var(--pink), var(--orange), var(--lime));
+      background-size: 180% 100%;
+      animation: heroRail 6s ease-in-out infinite;
+      z-index: -1;
+    }
+    @media (min-width: 850px) {
+      .hero-wrapper {
+        padding: 72px 20px 54px;
+        grid-template-columns: 1fr;
+        gap: 22px;
+      }
+    }
+    
+    .hero-content {
+      text-align: center;
+      position: relative;
+      z-index: 2;
+      animation: heroRise 700ms ease both;
+    }
+
+    .hero-study-icons {
+      position: absolute;
+      inset: -22px 0 0;
+      pointer-events: none;
+      z-index: -1;
+      opacity: 0.28;
+    }
+    .study-icon {
+      position: absolute;
+      width: 38px;
+      height: 38px;
+      color: var(--blue);
+      animation: studyDrift 7s ease-in-out infinite;
+    }
+    .study-icon svg {
+      width: 100%;
+      height: 100%;
+      stroke: currentColor;
+      fill: none;
+      stroke-width: 2.2;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+    }
+    .study-icon.book { left: 4%; top: 18%; color: var(--blue); transform: rotate(-10deg); }
+    .study-icon.pencil { right: 5%; top: 12%; color: var(--orange); animation-delay: 1s; transform: rotate(12deg); }
+    .study-icon.cap { left: 10%; bottom: 12%; color: var(--pink); animation-delay: 1.8s; }
+    .study-icon.check { right: 9%; bottom: 16%; color: #12A66A; animation-delay: 2.6s; }
+    @media (max-width: 520px) {
+      .hero-study-icons { opacity: 0.18; inset: -16px 0 0; }
+      .study-icon { width: 30px; height: 30px; }
+      .study-icon.book { left: 0; top: 16%; }
+      .study-icon.pencil { right: 0; top: 10%; }
+      .study-icon.cap { left: 2%; bottom: 19%; }
+      .study-icon.check { right: 1%; bottom: 24%; }
+    }
+
+    .hero-chip {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: rgba(200, 255, 0, 0.88);
+      color: var(--dark);
+      font-size: 11px;
+      font-weight: 800;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      padding: 7px 14px;
+      border-radius: 50px;
+      border: 2px solid var(--dark);
+      box-shadow: 3px 3px 0 var(--dark);
+      margin-bottom: 18px;
+      transform: rotate(-1deg);
+    }
+    .hero-chip svg {
+      width: 14px;
+      height: 14px;
+    }
+    
+    .hero-content h1 {
+      font-family: 'Baloo 2', sans-serif;
+      font-weight: 800;
+      font-size: clamp(34px, 11vw, 58px);
+      line-height: 0.98;
+      margin-bottom: 16px;
+      color: var(--dark);
+      letter-spacing: 0;
+      text-wrap: balance;
+    }
+    .hero-content h1 span {
+      display: inline-block;
+      color: var(--blue);
+      position: relative;
+      isolation: isolate;
+    }
+    .hero-content h1 span::after {
+      content: '';
+      position: absolute;
+      left: 2px;
+      right: 2px;
+      bottom: 4px;
+      height: 10px;
+      background: var(--lime);
+      z-index: -1;
+      border-radius: 999px;
+      transform: rotate(-1deg);
+    }
+    .hero-content p {
+      font-size: 15px;
+      color: var(--grey);
+      font-weight: 700;
+      margin-bottom: 22px;
+      max-width: 560px;
+      margin-left: auto;
+      margin-right: auto;
+      line-height: 1.55;
+    }
+    @media (min-width: 850px) {
+      .hero-content h1 { font-size: clamp(46px, 5vw, 64px); }
+      .hero-content p { font-size: 17px; margin-bottom: 28px; }
+      .hero-content p { margin-left: auto; margin-right: auto; }
+    }
+
+    /* =========================================
+       THE INLINE ACCORDION MARQUEE (CHIBI ANIMATED)
+       ========================================= */
+    .initiative-box {
+      width: 100%;
+      max-width: 700px; /* Made slightly wider to fit full names comfortably */
+      margin: 0 auto 32px;
+      background: var(--white);
+      border: 2.5px solid var(--dark);
+      border-radius: 16px;
+      overflow: hidden;
+      box-shadow: 6px 6px 0 rgba(17, 17, 24, 0.06);
+      transition: box-shadow 0.3s ease, transform 0.3s ease;
+    }
+    .initiative-box:hover {
+      box-shadow: 8px 8px 0 var(--lime);
+      transform: translateY(-2px);
+    }
+    .initiative-reveal {
+      display: grid;
+      grid-template-rows: 1fr;
+      transition: grid-template-rows 0.5s cubic-bezier(0.2, 0.8, 0.2, 1);
+    }
+    .initiative-reveal.open {
+      grid-template-rows: 1fr;
+    }
+    .reveal-inner {
+      overflow: visible; /* Required so heads don't get chopped off at the top */
+    }
+    .creator-cards {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 16px;
+      padding: 30px 16px 20px; /* Extra top padding for popping heads */
+      justify-content: center;
+      background: var(--off);
+      border-bottom: 2.5px solid var(--dark);
+      overflow: visible;
+    }
+    .creator-badge {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      background: var(--white);
+      border: 2px solid var(--dark);
+      padding: 6px 18px 6px 8px;
+      border-radius: 50px;
+      box-shadow: 2px 2px 0 rgba(17, 17, 24, 0.1);
+      
+      opacity: 1;
+      transform: translateY(0);
+      transition: opacity 0.4s ease, transform 0.4s cubic-bezier(0.34, 1.56, 0.64, 1), box-shadow 0.2s;
+    }
+    .initiative-reveal.open .creator-badge.delay-1 { transition-delay: 0.1s; opacity: 1; transform: translateY(0); }
+    .initiative-reveal.open .creator-badge.delay-2 { transition-delay: 0.2s; opacity: 1; transform: translateY(0); }
+    .initiative-reveal.open .creator-badge.delay-3 { transition-delay: 0.3s; opacity: 1; transform: translateY(0); }
+    .creator-badge:hover {
+      box-shadow: 4px 4px 0 var(--dark);
+      transform: translateY(-2px) !important;
+      transition-delay: 0s !important;
+    }
+    
+    /* THE CHIBI AVATAR CONTAINER */
+    .c-avatar {
+      width: 44px;
+      height: 44px;
+      border-radius: 50%;
+      border: 2px solid var(--dark);
+      position: relative;
+      background: var(--blue);
+      /* Remove overflow: hidden from here so heads can pop out */
+    }
+    .ca-1 { background: var(--blue); }
+    .ca-2 { background: var(--pink); }
+    .ca-3 { background: var(--orange); }
+    
+    /* THE CLIP PATH WRAPPER - This is the magic part */
+    .c-avatar-clip {
+      position: absolute;
+      /* Expand the wrapper upward to allow the head to pop out */
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 150%; 
+      /* Clip to a circle at the bottom, but open at the top */
+      clip-path: polygon(-50% -50%, 150% -50%, 150% 50%, 100% 50%, 100% 100%, 0% 100%, 0% 50%, -50% 50%);
+      border-radius: 0 0 22px 22px; /* Match half the width (44/2) for perfect bottom curve */
+      overflow: hidden;
+    }
+    
+    /* THE CHIBI IMAGE */
+    .chibi-img {
+      position: absolute;
+      bottom: -2px; /* Pull down slightly to cover any sub-pixel gaps */
+      left: 50%;
+      width: 140%; 
+      height: 100%; /* Relative to the taller wrapper */
+      object-fit: contain;
+      object-position: bottom center; /* Keep feet planted at bottom */
+      transform: translateX(-50%);
+      transition: transform 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
+      pointer-events: none; 
+    }
+    
+    /* Playful Micro-Interactions */
+    .creator-badge:hover .ca-1 .chibi-img { transform: translateX(-50%) scale(1.15) rotate(-4deg); }
+    .creator-badge:hover .ca-2 .chibi-img { transform: translateX(-50%) scale(1.15) translateY(-4px); }
+    .creator-badge:hover .ca-3 .chibi-img { transform: translateX(-50%) scale(1.15) rotate(4deg); }
+    
+    .c-name {
+      font-size: 14px;
+      font-weight: 800;
+      color: var(--dark);
+      white-space: nowrap; /* Prevents long names from wrapping */
+    }
+
+    .marquee-trigger {
+      width: 100%;
+      background: var(--dark);
+      color: var(--lime);
+      border: none;
+      padding: 12px 0;
+      cursor: default;
+      overflow: hidden;
+      display: flex;
+      outline: none;
+    }
+    .marquee-track {
+      display: flex;
+      width: max-content;
+      animation: scrollMarquee 15s linear infinite;
+    }
+    .marquee-trigger:hover .marquee-track {
+      animation-play-state: paused;
+    }
+    .marquee-text {
+      font-family: 'DM Sans', sans-serif;
+      font-size: 12px;
+      font-weight: 900;
+      letter-spacing: 1.5px;
+      padding-right: 20px;
+      text-transform: uppercase;
+      white-space: nowrap;
+    }
+    .marquee-text span {
+      color: var(--white);
+    }
+    @keyframes scrollMarquee {
+      0% { transform: translateX(0); }
+      100% { transform: translateX(-50%); }
+    }
+
+    /* Search Bar */
+    .search-container {
+      position: relative;
+      max-width: 500px;
+      margin: 0 auto;
+      filter: drop-shadow(0 18px 24px rgba(67,97,238,0.12));
+    }
+    .search-bar {
+      width: 100%;
+      min-height: 58px;
+      padding: 17px 22px 17px 54px;
+      font-family: 'DM Sans', sans-serif;
+      font-size: 15px;
+      font-weight: 700;
+      color: var(--dark);
+      background: rgba(255,255,255,0.95);
+      border: 2.5px solid var(--dark);
+      border-radius: 18px;
+      outline: none;
+      box-shadow: 5px 5px 0 var(--dark);
+      transition: all 0.25s ease;
+    }
+    .search-icon {
+      position: absolute;
+      left: 20px;
+      top: 50%;
+      transform: translateY(-50%);
+      color: var(--dark);
+      opacity: 0.5;
+    }
+    .search-bar:focus {
+      box-shadow: 5px 5px 0 var(--blue);
+      border-color: var(--blue);
+      transform: translate(-2px, -2px);
+    }
+    .search-bar:focus + .search-icon {
+      opacity: 1;
+      color: var(--blue);
+    }
+
+    /* Additional Keyframes from Original */
+    @keyframes heroRise {
+      from { opacity: 0; transform: translateY(18px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    @keyframes studyDrift {
+      0%, 100% { translate: 0 0; opacity: 0.72; }
+      50% { translate: 0 -8px; opacity: 1; }
+    }
+    
+    /* Live TTC Pulse */
+    .pulse-wrap {
+      display: none;
+      max-width: 1120px;
+      margin: -10px auto 34px;
+      padding: 0 20px;
+    }
+    .pulse-wrap.is-visible {
+      display: block;
+      animation: pulseRise 420ms cubic-bezier(0.2, 0.8, 0.2, 1) both;
+    }
+    .pulse-banner {
+      display: grid;
+      grid-template-columns: auto 1fr auto;
+      align-items: center;
+      gap: 16px;
+      background: var(--dark);
+      color: var(--white);
+      border: 2.5px solid var(--dark);
+      border-radius: 24px;
+      padding: 16px 18px;
+      box-shadow: 8px 8px 0 rgba(67, 97, 238, 0.22);
+      overflow: hidden;
+      position: relative;
+    }
+    .pulse-banner::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(90deg, rgba(67,97,238,0.32), rgba(255,61,138,0.22), rgba(255,107,53,0.24));
+      opacity: 0.85;
+    }
+    .pulse-dot,
+    .pulse-copy,
+    .pulse-proof {
+      position: relative;
+      z-index: 1;
+    }
+    .pulse-dot {
+      width: 14px;
+      height: 14px;
+      border-radius: 999px;
+      background: var(--lime);
+      border: 2px solid var(--white);
+      box-shadow: 0 0 0 0 rgba(200,255,0,0.6);
+      animation: livePulse 1.8s ease-out infinite;
+    }
+    .pulse-copy {
+      min-width: 0;
+    }
+    .pulse-kicker {
+      display: block;
+      font-size: 10px;
+      line-height: 1;
+      font-weight: 900;
+      letter-spacing: 1.6px;
+      text-transform: uppercase;
+      color: var(--lime);
+      margin-bottom: 5px;
+    }
+    .pulse-text {
+      display: block;
+      font-size: clamp(15px, 2vw, 20px);
+      line-height: 1.35;
+      font-weight: 900;
+      color: var(--white);
+    }
+    .pulse-proof {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      justify-content: center;
+      min-width: 120px;
+      padding: 10px 14px;
+      border-radius: 16px;
+      background: var(--white);
+      color: var(--dark);
+      border: 2px solid var(--dark);
+      box-shadow: 3px 3px 0 var(--dark);
+      font-size: 13px;
+      font-weight: 900;
+      white-space: nowrap;
+    }
+    @keyframes livePulse {
+      0% { box-shadow: 0 0 0 0 rgba(200,255,0,0.7); }
+      70% { box-shadow: 0 0 0 10px rgba(200,255,0,0); }
+      100% { box-shadow: 0 0 0 0 rgba(200,255,0,0); }
+    }
+    @keyframes pulseRise {
+      from { opacity: 0; transform: translateY(12px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    @media (max-width: 700px) {
+      .pulse-wrap {
+        margin-top: -4px;
+      }
+      .pulse-banner {
+        grid-template-columns: auto 1fr;
+        border-radius: 20px;
+      }
+      .pulse-proof {
+        grid-column: 1 / -1;
+        justify-self: stretch;
+      }
+    }
+
+    /* Filtering System */
+    .filter-wrapper {
+      max-width: 1200px;
+      margin: 0 auto 40px;
+    }
+    .filter-label {
+      font-size: 11px;
+      font-weight: 800;
+      color: var(--grey);
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      margin-bottom: 10px;
+      text-align: center;
+    }
+    .filters {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-bottom: 24px;
+      padding: 0 20px;
+    }
+    @supports (animation-timeline: view()) {
+      .filters {
+        animation: filtersReveal both;
+        animation-timeline: view();
+        animation-range: entry 0% cover 24%;
+      }
+    }
+    @keyframes filtersReveal {
+      from { opacity: 0.45; transform: translateY(18px) scale(0.98); }
+      to { opacity: 1; transform: translateY(0) scale(1); }
+    }
+    .filter-btn {
+      background: var(--white);
+      border: 2px solid var(--dark);
+      padding: 8px 18px;
+      border-radius: 50px;
+      font-family: 'DM Sans', sans-serif;
+      font-weight: 800;
+      font-size: 13px;
+      cursor: pointer;
+      box-shadow: 2px 2px 0 var(--dark);
+      transition: all 0.2s cubic-bezier(0.2, 0.8, 0.2, 1);
+      white-space: nowrap;
+    }
+    .filter-btn:hover {
+      transform: translate(-2px, -2px);
+      box-shadow: 4px 4px 0 var(--dark);
+    }
+    .filter-btn.active {
+      background: var(--blue);
+      color: var(--white);
+      border-color: var(--dark);
+    }
+
+    @media (max-width: 700px) {
+      .filter-wrapper {
+        margin-bottom: 24px;
+      }
+      .filter-label {
+        text-align: left;
+        margin-left: 20px;
+      }
+      .filters {
+        justify-content: flex-start;
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        padding-bottom: 10px;
+        margin-bottom: 16px;
+        -webkit-overflow-scrolling: touch;
+        scrollbar-width: none;
+      }
+      .filters::-webkit-scrollbar {
+        display: none;
+      }
+      .filter-btn {
+        flex: 0 0 auto;
+      }
+    }
+
+    /* Quiz Grid */
+    .quiz-container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 20px 80px 20px;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+      gap: 28px;
+    }
+    .card {
+      background: var(--white);
+      border: 2.5px solid var(--dark);
+      border-radius: 24px;
+      padding: 28px;
+      box-shadow: 6px 6px 0px var(--dark);
+      position: relative;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      transition: transform 0.2s, box-shadow 0.2s;
+      text-decoration: none;
+      color: inherit;
+    }
+    .card:hover {
+      transform: translate(-4px, -4px);
+      box-shadow: 10px 10px 0px var(--dark);
+    }
+    .card::before {
+      content: '';
+      position: absolute;
+      top: 0; left: 0; right: 0;
+      height: 6px;
+    }
+    .c-maths::before { background: var(--blue); }
+    .c-science::before { background: var(--lime); }
+    .c-english::before { background: var(--pink); }
+    .c-default::before { background: var(--orange); }
+
+    .card-meta {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 16px;
+    }
+    .class-tag {
+      font-size: 12px;
+      font-weight: 900;
+      background: var(--off);
+      border: 2px solid var(--dark);
+      padding: 6px 12px;
+      border-radius: 8px;
+    }
+    .q-count {
+      font-size: 12px;
+      font-weight: 700;
+      color: var(--grey);
+      display: flex;
+      align-items: center;
+      gap: 4px;
+    }
+    .card h3 {
+      font-family: 'Righteous', cursive;
+      font-size: 24px;
+      line-height: 1.25;
+      margin-bottom: 10px;
+    }
+    .card p {
+      font-size: 15px;
+      color: var(--grey);
+      font-weight: 500;
+      margin-bottom: 24px;
+      flex: 1;
+    }
+    .card-footer {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      border-top: 2px dashed rgba(107, 107, 128, 0.2);
+      padding-top: 18px;
+    }
+    .subj-tag {
+      font-size: 13px;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+    .play-icon {
+      background: var(--dark);
+      color: var(--white);
+      width: 36px;
+      height: 36px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: background 0.2s, transform 0.2s;
+    }
+    .card:hover .play-icon {
+      background: var(--orange);
+      transform: scale(1.1);
+    }
+
+    /* GEO SECTION: Why TTC & FAQ */
+    .geo-section {
+      background: var(--white);
+      border-top: 1px solid rgba(17, 17, 24, 0.08);
+      border-bottom: 1px solid rgba(17, 17, 24, 0.08);
+      padding: 100px 20px;
+    }
+    .geo-inner {
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+    .geo-header {
+      text-align: center;
+      margin-bottom: 56px;
+    }
+    .geo-header h2 {
+      font-family: 'Righteous', cursive;
+      font-size: 36px;
+      color: var(--dark);
+      margin-bottom: 16px;
+    }
+    .geo-header p {
+      color: var(--grey);
+      font-weight: 500;
+      font-size: 16px;
+      max-width: 600px;
+      margin: 0 auto;
+    }
+    .why-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 32px;
+      margin-bottom: 100px;
+    }
+    .why-card {
+      background: var(--off);
+      border: 2px solid rgba(17, 17, 24, 0.08);
+      border-radius: 24px;
+      padding: 40px 28px;
+      text-align: center;
+      transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s;
+    }
+    .why-card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 16px 40px rgba(0, 0, 0, 0.06);
+      border-color: rgba(17, 17, 24, 0.2);
+    }
+    .why-icon-wrap {
+      width: 72px;
+      height: 72px;
+      margin: 0 auto 24px auto;
+      border-radius: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: var(--white);
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.06);
+    }
+    .why-icon-wrap svg {
+      width: 32px;
+      height: 32px;
+    }
+    .icon-blue svg { color: var(--blue); }
+    .icon-orange svg { color: var(--orange); }
+    .icon-pink svg { color: var(--pink); }
+    .icon-green svg { color: var(--green); }
+
+    .why-card h3 {
+      font-family: 'Righteous', cursive;
+      font-size: 22px;
+      margin-bottom: 12px;
+      color: var(--dark);
+    }
+    .why-card p {
+      font-size: 15px;
+      color: var(--grey);
+      font-weight: 500;
+      line-height: 1.6;
+    }
+
+    /* Redesigned FAQ Accordion */
+    .faq-container {
+      max-width: 850px;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+    .faq-item {
+      background: var(--white);
+      border: 1px solid rgba(17, 17, 24, 0.06);
+      border-radius: 20px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.02);
+      overflow: hidden;
+      transition: all 0.3s ease;
+    }
+    .faq-item:hover {
+      border-color: rgba(67, 97, 238, 0.2);
+      box-shadow: 0 6px 24px rgba(67, 97, 238, 0.06);
+      transform: translateY(-2px);
+    }
+    .faq-item.active {
+      border-color: var(--blue);
+      box-shadow: 0 8px 32px rgba(67, 97, 238, 0.1);
+      transform: translateY(0);
+    }
+    .faq-question {
+      padding: 24px 28px;
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      cursor: pointer;
+      font-weight: 700;
+      font-size: 17px;
+      color: var(--dark);
+      background: var(--white);
+      transition: background 0.2s;
+    }
+    .faq-bullet-icon {
+      flex-shrink: 0;
+      width: 44px;
+      height: 44px;
+      border-radius: 14px;
+      background: var(--off);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--blue);
+      transition: all 0.3s ease;
+    }
+    .faq-item.active .faq-bullet-icon {
+      background: var(--blue);
+      color: var(--white);
+      transform: scale(1.05) rotate(5deg);
+    }
+    .faq-bullet-icon svg {
+      width: 22px;
+      height: 22px;
+    }
+    .faq-question-text {
+      flex: 1;
+    }
+    .faq-chevron {
+      color: var(--grey);
+      transition: transform 0.4s cubic-bezier(0.2, 0.8, 0.2, 1);
+      width: 24px;
+      height: 24px;
+    }
+    .faq-item.active .faq-chevron {
+      transform: rotate(180deg);
+      color: var(--blue);
+    }
+    .faq-answer {
+      max-height: 0;
+      padding: 0 28px 0 92px; /* Aligned with text, offset by icon */
+      opacity: 0;
+      color: var(--grey);
+      font-weight: 500;
+      font-size: 15.5px;
+      line-height: 1.7;
+      transition: all 0.4s cubic-bezier(0.2, 0.8, 0.2, 1);
+      background: var(--white);
+    }
+    .faq-item.active .faq-answer {
+      max-height: 400px;
+      padding-bottom: 28px;
+      opacity: 1;
+    }
+    @media (max-width: 600px) {
+      .faq-answer { padding-left: 28px; }
+      .faq-question { padding: 20px; gap: 14px; }
+      .faq-bullet-icon { width: 36px; height: 36px; }
+      .faq-bullet-icon svg { width: 18px; height: 18px; }
+    }
+
+    /* Footer */
+    footer {
+      background: var(--white);
+      padding: 50px 20px;
+      text-align: center;
+      margin-top: auto;
+      border-top: 1px solid rgba(17,17,24,0.08);
+    }
+    .footer-content {
+      max-width: 650px;
+      margin: 0 auto;
+    }
+    .footer-content h4 {
+      font-family: 'Righteous', cursive;
+      font-size: 22px;
+      margin-bottom: 16px;
+    }
+    .footer-content p {
+      font-size: 14px;
+      color: var(--grey);
+      font-weight: 500;
+      margin-bottom: 24px;
+      line-height: 1.6;
+    }
+    .seo-links {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 20px;
+      font-size: 13px;
+      font-weight: 800;
+    }
+    .seo-links a {
+      color: var(--blue);
+      text-decoration: none;
+      transition: color 0.2s;
+    }
+    .seo-links a:hover {
+      color: var(--pink);
+    }
+
+    /* No Results State */
+    .no-results {
+      text-align: center;
+      grid-column: 1 / -1;
+      padding: 60px 20px;
+      display: none;
+    }
+    .no-results svg {
+      width: 64px;
+      height: 64px;
+      color: var(--grey);
+      margin-bottom: 16px;
+      opacity: 0.5;
+    }
+    .no-results h3 {
+      font-family: 'Righteous', cursive;
+      color: var(--dark);
+      font-size: 26px;
+      margin-bottom: 8px;
+    }
+    .no-results p {
+      color: var(--grey);
+      font-weight: 500;
+    }
+    .header-actions {
+      display: flex;
+      gap: 10px;
+      align-items: center;
+    }
+    .btn-install {
+      background: var(--lime) !important;
+      color: var(--dark) !important;
+      font-family: inherit;
+      border: none;
+      cursor: pointer;
+    }
+    .btn-install:hover {
+      filter: brightness(0.95);
+      transform: translateY(-2px);
+    }
+    .btn-visit {
+      background: var(--dark) !important;
+      color: var(--white) !important;
+    }
+    .btn-visit:hover {
+      background: var(--blue) !important;
+      transform: translateY(-2px);
+    }
+    
+    @media (max-width: 600px) {
+      .header-actions {
+        flex-direction: column;
+        gap: 6px;
+        align-items: flex-end;
+      }
+      .header-cta {
+        font-size: 10px !important;
+        padding: 6px 10px !important;
+      }
+      header {
+        padding: 8px 12px;
+      }
+    }
+
+    /* Dynamic Island */
+    .dynamic-island {
+      position: fixed;
+      top: 15px;
+      left: 50%;
+      transform: translateX(-50%) translateY(-100%);
+      background: #000;
+      color: #fff;
+      border-radius: 40px;
+      padding: 10px 20px;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      z-index: 1000;
+      opacity: 0;
+      transition: all 0.5s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+      min-width: 150px;
+      justify-content: center;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+    }
+    .dynamic-island.active {
+      transform: translateX(-50%) translateY(0);
+      opacity: 1;
+      min-width: 200px;
+    }
+    .di-content {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    .di-icon svg {
+      width: 20px;
+      height: 20px;
+      stroke: var(--lime);
+      animation: installBounce 1s infinite alternate;
+    }
+    @keyframes installBounce {
+      0% { transform: translateY(-2px); }
+      100% { transform: translateY(2px); }
+    }
+    .di-icon.done svg {
+      stroke: var(--green);
+      animation: none;
+    }
+
+    /* =========================================
+       CREATOR MODAL (NEO-BRUTALIST)
+       ========================================= */
+    /* Remove default dialog styles */
+    dialog.creator-modal {
+      border: none;
+      background: transparent;
+      padding: 0;
+      margin: auto;
+      max-width: 100vw;
+      max-height: 100vh;
+      overflow: visible;
+    }
+
+    /* The backdrop styling */
+    dialog.creator-modal::backdrop {
+      background: rgba(17, 17, 24, 0.4);
+      backdrop-filter: blur(8px);
+      -webkit-backdrop-filter: blur(8px);
+      animation: modalFadeIn 0.3s ease;
+    }
+
+    /* The card itself */
+    .creator-modal-card {
+      background: var(--white);
+      border: 3.5px solid var(--dark);
+      border-radius: 28px;
+      width: 90vw;
+      max-width: 420px;
+      padding: 32px 24px 24px;
+      box-shadow: 12px 12px 0 rgba(17, 17, 24, 0.15);
+      position: relative;
+      /* Animation */
+      opacity: 0;
+      transform: translateY(30px) scale(0.95);
+      animation: cardPopIn 0.4s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
+    }
+    
+    /* Animation class for smooth closing */
+    .creator-modal-card.closing {
+      animation: cardPopOut 0.25s ease-in forwards;
+    }
+
+    .cm-close-btn {
+      position: absolute;
+      top: -16px;
+      right: -16px;
+      background: var(--white);
+      border: 3px solid var(--dark);
+      width: 44px;
+      height: 44px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      color: var(--dark);
+      box-shadow: 4px 4px 0 var(--dark);
+      transition: all 0.2s cubic-bezier(0.34, 1.56, 0.64, 1);
+      z-index: 10;
+    }
+    .cm-close-btn:hover {
+      background: var(--pink);
+      color: var(--white);
+      transform: translate(-2px, -2px) rotate(90deg);
+      box-shadow: 6px 6px 0 var(--dark);
+    }
+    .cm-close-btn:active {
+      transform: translate(2px, 2px) rotate(90deg);
+      box-shadow: 0 0 0 var(--dark);
+    }
+
+    .cm-header {
+      display: flex;
+      align-items: center;
+      gap: 18px;
+      margin-bottom: 24px;
+      padding-bottom: 20px;
+      border-bottom: 2px dashed rgba(17, 17, 24, 0.1);
+    }
+
+    .cm-avatar-wrap {
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      border: 3px solid var(--dark);
+      flex-shrink: 0;
+      position: relative;
+      overflow: hidden; /* Standard clipping for the large view is fine */
+      box-shadow: 4px 4px 0 rgba(17, 17, 24, 0.1);
+    }
+    .cm-img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: top center;
+    }
+    
+    /* Reusing colors from main CSS */
+    .cm-avatar-wrap.ca-1 { background: var(--blue); }
+    .cm-avatar-wrap.ca-2 { background: var(--pink); }
+    .cm-avatar-wrap.ca-3 { background: var(--orange); }
+
+    .cm-title-wrap {
+      text-align: left;
+    }
+    .cm-title-wrap h3 {
+      font-family: 'Righteous', cursive;
+      font-size: 24px;
+      color: var(--dark);
+      margin: 0 0 4px;
+      line-height: 1.1;
+    }
+    .cm-role {
+      display: inline-block;
+      background: var(--off);
+      color: var(--grey);
+      font-size: 11px;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      padding: 4px 10px;
+      border-radius: 8px;
+      border: 1.5px solid rgba(17,17,24,0.1);
+    }
+
+    .cm-body p {
+      font-size: 15px;
+      color: var(--grey);
+      font-weight: 500;
+      line-height: 1.6;
+      margin-bottom: 0;
+    }
+
+    .cm-footer {
+      margin-top: 28px;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+    
+    .cm-cta {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      width: 100%;
+      border: 2.5px solid var(--dark);
+      padding: 14px;
+      border-radius: 16px;
+      font-weight: 800;
+      font-size: 15px;
+      text-decoration: none;
+      box-shadow: 4px 4px 0 var(--dark);
+      transition: all 0.2s cubic-bezier(0.34, 1.56, 0.64, 1);
+    }
+    
+    .cm-cta-offline {
+      background: var(--lime);
+      color: var(--dark);
+    }
+    .cm-cta-offline:hover {
+      transform: translate(-2px, -2px);
+      box-shadow: 6px 6px 0 var(--dark);
+      background: var(--white);
+    }
+    
+    .cm-cta-online {
+      background: var(--dark);
+      color: var(--white);
+      border-color: var(--dark);
+      box-shadow: 4px 4px 0 #25D366; /* WhatsApp Green shadow */
+    }
+    .cm-cta-online:hover {
+      transform: translate(-2px, -2px);
+      box-shadow: 6px 6px 0 #25D366;
+      background: #25D366;
+      color: var(--dark);
+    }
+    
+    .cm-cta:active {
+      transform: translate(2px, 2px);
+      box-shadow: 0 0 0 transparent !important;
+    }
+
+    @keyframes modalFadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+    @keyframes cardPopIn {
+      to { opacity: 1; transform: translateY(0) scale(1); }
+    }
+    @keyframes cardPopOut {
+      from { opacity: 1; transform: translateY(0) scale(1); }
+      to { opacity: 0; transform: translateY(20px) scale(0.95); }
+    }
+
+    /* Reset button styles for the badges */
+    button.creator-badge {
+      cursor: pointer;
+      outline: none;
+    }
+    
+    @media (max-width: 500px) {
+      .creator-modal-card {
+        padding: 24px 20px 20px;
+      }
+      .cm-header {
+        flex-direction: column;
+        text-align: center;
+        gap: 12px;
+      }
+      .cm-title-wrap {
+        text-align: center;
+      }
+      .cm-close-btn {
+        width: 36px;
+        height: 36px;
+        top: -12px;
+        right: -12px;
+      }
+      .cm-close-btn svg {
+        width: 18px;
+        height: 18px;
+      }
+    }
+
+    /* Mobile-first hero rescue: CSS-only so quiz logic and creator actions stay untouched. */
+    @media (max-width: 700px) {
+      html,
+      body {
+        width: 100%;
+        overflow-x: hidden;
+      }
+
+      header {
+        gap: 8px;
+        padding: 7px 10px;
+      }
+
+      .brand {
+        min-width: 0;
+        gap: 8px;
+      }
+
+      .brand img {
+        width: 36px;
+        height: 36px;
+      }
+
+      .brand-text {
+        font-size: 18px;
+      }
+
+      .brand-sub {
+        font-size: 9px;
+        letter-spacing: 1.1px;
+      }
+
+      .header-actions {
+        gap: 5px;
+      }
+
+      .header-cta {
+        max-width: 128px;
+        min-height: 28px;
+        padding: 5px 9px !important;
+        font-size: 9.5px !important;
+        line-height: 1.05;
+        text-align: center;
+        white-space: normal;
+      }
+
+      .hero-wrapper {
+        width: 100%;
+        max-width: none;
+        margin: 0;
+        padding: 10px 12px 18px;
+        gap: 10px;
+        overflow: visible;
+      }
+
+      .hero-content {
+        width: 100%;
+        min-width: 0;
+      }
+
+      .hero-wrapper::before {
+        inset: 0 8px 6px;
+        height: auto;
+        border-radius: 22px;
+      }
+
+      .hero-wrapper::after {
+        left: 18px;
+        right: 18px;
+        top: 8px;
+        height: 4px;
+      }
+
+      .hero-content h1 {
+        font-size: clamp(28px, 8.8vw, 36px);
+        line-height: 1.02;
+        margin-bottom: 10px;
+      }
+
+      .hero-content h1 span::after {
+        bottom: 3px;
+        height: 7px;
+      }
+
+      .hero-chip {
+        margin: 8px 0 12px;
+        padding: 6px 11px;
+        font-size: 9.5px;
+        line-height: 1.1;
+        max-width: calc(100vw - 40px);
+      }
+
+      .hero-content p {
+        font-size: 13px;
+        line-height: 1.35;
+        margin-bottom: 14px;
+        padding: 0 2px;
+      }
+
+      .initiative-box {
+        width: 100%;
+        max-width: 100%;
+        margin: 0 auto 14px;
+        border-radius: 14px;
+        box-shadow: 4px 4px 0 rgba(17, 17, 24, 0.08);
+      }
+
+      .initiative-reveal {
+        grid-template-rows: 1fr;
+        width: 100%;
+        min-width: 0;
+      }
+
+      .reveal-inner {
+        min-width: 0;
+      }
+
+      .creator-cards {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 8px;
+        width: 100%;
+        min-width: 0;
+        padding: 18px 8px 10px;
+      }
+
+      .creator-badge,
+      .initiative-reveal.open .creator-badge.delay-1,
+      .initiative-reveal.open .creator-badge.delay-2,
+      .initiative-reveal.open .creator-badge.delay-3 {
+        min-width: 0;
+        flex-direction: column;
+        gap: 5px;
+        padding: 6px 4px 7px;
+        border-radius: 14px;
+        opacity: 1;
+        transform: none;
+      }
+
+      .c-avatar {
+        width: 40px;
+        height: 40px;
+      }
+
+      .c-avatar-clip {
+        border-radius: 0 0 20px 20px;
+      }
+
+      .c-name {
+        max-width: 100%;
+        font-size: 10px;
+        line-height: 1.05;
+        white-space: normal;
+      }
+
+      .marquee-trigger {
+        min-height: 32px;
+        padding: 8px 0;
+      }
+
+      .marquee-text {
+        font-size: 10px;
+        letter-spacing: 0.8px;
+      }
+
+      .search-container {
+        width: 100%;
+        max-width: none;
+        margin: 0;
+      }
+
+      .search-bar {
+        min-height: 48px;
+        padding: 13px 14px 13px 46px;
+        border-radius: 15px;
+        font-size: 13px;
+        box-shadow: 4px 4px 0 var(--dark);
+      }
+
+      .search-icon {
+        left: 16px;
+      }
+    }
+
+    /* =========================================
+       REELS (a full-screen section opened from the nav)
+       Solid bands above and below the video, so nothing sits on top of the picture.
+       ========================================= */
+    .reels-section { display: none; position: fixed; inset: 0; z-index: 800; height: 100vh; height: 100dvh; background: #07070b; color: #fff; flex-direction: column; }
+    .reels-section.open { display: flex; }
+
+    .reels-top {
+      flex: 0 0 auto; position: relative; z-index: 10;
+      padding: calc(env(safe-area-inset-top) + 12px) max(16px, calc((100% - 480px) / 2 + 16px)) 12px;
+      background: #07070b; border-bottom: 1px solid rgba(255,255,255,0.08);
+    }
+    .reels-progress { height: 3px; border-radius: 3px; background: rgba(255,255,255,0.18); overflow: hidden; margin-bottom: 12px; }
+    .reels-progress-fill { height: 100%; width: 0; background: var(--lime); border-radius: 3px; transition: width 0.35s ease; }
+    .reels-bar { display: flex; align-items: center; gap: 10px; }
+    .reels-chips { flex: 1; min-width: 0; display: flex; gap: 8px; overflow-x: auto; scrollbar-width: none; padding: 2px 0; }
+    .reels-chips::-webkit-scrollbar { display: none; }
+    .reel-chip {
+      flex: 0 0 auto; font: 800 12.5px 'DM Sans', sans-serif; color: #fff;
+      background: rgba(255,255,255,0.08); border: 1.5px solid rgba(255,255,255,0.22);
+      padding: 7px 14px; border-radius: 50px; cursor: pointer;
+      transition: background 0.2s, color 0.2s, border-color 0.2s;
+    }
+    .reel-chip.active { background: var(--lime); color: var(--dark); border-color: var(--lime); }
+    .reels-close {
+      flex: 0 0 auto; width: 36px; height: 36px; border-radius: 50%; padding: 0; cursor: pointer;
+      display: flex; align-items: center; justify-content: center;
+      background: rgba(255,255,255,0.08); color: #fff; border: 1.5px solid rgba(255,255,255,0.22);
+    }
+    .reels-close svg { width: 18px; height: 18px; }
+
+    .reels-scroll {
+      flex: 1 1 auto; min-height: 0; overflow-y: scroll;
+      scroll-snap-type: y mandatory; overscroll-behavior-y: contain;
+      scrollbar-width: none; -webkit-overflow-scrolling: touch;
+    }
+    .reels-scroll::-webkit-scrollbar { display: none; }
+    .reel-slide { height: 100%; scroll-snap-align: start; scroll-snap-stop: always; display: flex; justify-content: center; }
+    .reel-col { width: 100%; max-width: 480px; height: 100%; display: flex; flex-direction: column; }
+
+    /* title band: above the video, never on it */
+    .reel-info { flex: 0 0 auto; padding: 14px 16px 10px; }
+    .reel-tag {
+      display: inline-block; background: var(--lime); color: var(--dark);
+      font-weight: 800; font-size: 11px; letter-spacing: 1px; text-transform: uppercase;
+      padding: 5px 11px; border-radius: 50px; margin-bottom: 8px;
+    }
+    .reel-hook {
+      font-family: 'Baloo 2', sans-serif; font-weight: 800;
+      font-size: clamp(19px, 5.4vw, 24px); line-height: 1.15;
+      display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden;
+    }
+
+    /* video card + action rail */
+    .reel-stage { flex: 1 1 auto; min-height: 0; display: flex; align-items: flex-end; justify-content: center; gap: 12px; padding: 2px 12px 4px; }
+    .reel-video {
+      position: relative; height: 100%; aspect-ratio: 9 / 16; max-width: calc(100% - 70px);
+      background: #000; border-radius: 20px; overflow: hidden; border: 1px solid rgba(255,255,255,0.12);
+    }
+    .reel-poster { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; z-index: 0; filter: brightness(0.7); transition: opacity 0.3s; }
+    .reel-spin {
+      position: absolute; left: 50%; top: 50%; width: 34px; height: 34px; margin: -17px 0 0 -17px; z-index: 1;
+      border-radius: 50%; border: 3px solid rgba(255,255,255,0.25); border-top-color: #fff;
+      animation: reelspin 0.8s linear infinite; transition: opacity 0.3s;
+    }
+    @keyframes reelspin { to { transform: rotate(360deg); } }
+    .reel-video iframe { position: absolute; inset: 0; width: 100%; height: 100%; border: 0; z-index: 2; opacity: 0; pointer-events: none; transition: opacity 0.3s; }
+    .reel-video.loaded iframe { opacity: 1; }
+    .reel-video.loaded .reel-poster, .reel-video.loaded .reel-spin { opacity: 0; visibility: hidden; }
+    .reel-tap { position: absolute; inset: 0; z-index: 3; touch-action: manipulation; -webkit-tap-highlight-color: transparent; cursor: pointer; }
+    .reel-burst { position: absolute; width: 84px; height: 84px; margin: -42px 0 0 -42px; z-index: 4; color: var(--pink); pointer-events: none; animation: reelburst 0.75s ease-out forwards; }
+    .reel-burst svg { width: 100%; height: 100%; fill: currentColor; stroke: none; filter: drop-shadow(0 4px 12px rgba(0,0,0,0.5)); }
+    @keyframes reelburst { 0% { transform: scale(0.3); opacity: 0; } 25% { transform: scale(1.15); opacity: 1; } 100% { transform: scale(1.35) translateY(-26px); opacity: 0; } }
+    .reel-flash { position: absolute; left: 50%; top: 50%; width: 64px; height: 64px; margin: -32px 0 0 -32px; z-index: 4; border-radius: 50%; background: rgba(0,0,0,0.55); color: #fff; display: flex; align-items: center; justify-content: center; pointer-events: none; animation: reelflash 0.7s ease-out forwards; }
+    .reel-flash svg { width: 28px; height: 28px; }
+    @keyframes reelflash { 0% { opacity: 0; transform: scale(0.8); } 20% { opacity: 1; transform: scale(1); } 100% { opacity: 0; transform: scale(1.1); } }
+    .reel-fallback {
+      position: absolute; inset: 0; z-index: 5; display: none; flex-direction: column; align-items: center; justify-content: center; gap: 14px;
+      background: rgba(7,7,11,0.94); text-align: center; padding: 20px; font-weight: 700; font-size: 14px;
+    }
+    .reel-video.failed .reel-fallback { display: flex; }
+    .reel-fallback a { display: inline-flex; align-items: center; gap: 8px; background: #fff; color: var(--dark); text-decoration: none; font-weight: 800; font-size: 14px; padding: 11px 18px; border-radius: 50px; }
+    .reel-fallback svg { width: 18px; height: 18px; }
+
+    .reel-side { flex: 0 0 auto; display: flex; flex-direction: column; gap: 14px; padding-bottom: 4px; }
+    .reel-act {
+      width: 52px; display: flex; flex-direction: column; align-items: center; gap: 4px;
+      background: none; border: 0; padding: 0; color: #fff; cursor: pointer; text-decoration: none;
+      font: 800 10.5px 'DM Sans', sans-serif; -webkit-tap-highlight-color: transparent;
+    }
+    .reel-act .ico {
+      width: 46px; height: 46px; border-radius: 50%; display: flex; align-items: center; justify-content: center;
+      background: rgba(255,255,255,0.1); border: 1.5px solid rgba(255,255,255,0.24); transition: background 0.2s, border-color 0.2s, color 0.2s;
+    }
+    .reel-act svg { width: 22px; height: 22px; }
+    .reel-act:active .ico { transform: scale(0.92); }
+    .reel-act.liked .ico { background: rgba(255,61,138,0.18); border-color: var(--pink); color: var(--pink); }
+    .reel-act.liked svg { fill: currentColor; }
+    .reel-act.pop svg { animation: reelpop 0.35s ease; }
+    @keyframes reelpop { 40% { transform: scale(1.35); } }
+    .reel-act .ic-on { display: none; }
+    .reels-section.sound-on .reel-act .ic-on { display: block; }
+    .reels-section.sound-on .reel-act .ic-off { display: none; }
+
+    /* caption + button band: below the video */
+    .reel-bottom { flex: 0 0 auto; padding: 12px 16px calc(var(--nav-clear) + 2px); }
+    .reel-caption {
+      font-weight: 700; font-size: 14.5px; line-height: 1.4; color: rgba(255,255,255,0.88); margin-bottom: 12px;
+      display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden;
+    }
+    .reel-cta {
+      width: 100%; display: flex; align-items: center; justify-content: center; gap: 8px; cursor: pointer;
+      font: 800 16px 'DM Sans', sans-serif; color: var(--dark); background: var(--lime);
+      border: 2px solid var(--lime); border-radius: 14px; padding: 13px 18px; transition: transform 0.15s;
+    }
+    .reel-cta:active { transform: scale(0.98); }
+    .reel-cta svg { width: 18px; height: 18px; }
+
+    .reels-toast {
+      position: absolute; left: 50%; bottom: calc(var(--nav-clear) + 74px); transform: translateX(-50%) translateY(8px);
+      z-index: 20; background: #fff; color: var(--dark); font: 800 13px 'DM Sans', sans-serif;
+      padding: 9px 16px; border-radius: 30px; opacity: 0; pointer-events: none; transition: opacity 0.25s, transform 0.25s; white-space: nowrap;
+    }
+    .reels-toast.show { opacity: 1; transform: translateX(-50%) translateY(0); }
+
+    @media (max-height: 720px) {
+      .reels-top { padding-top: calc(env(safe-area-inset-top) + 8px); padding-bottom: 8px; }
+      .reels-progress { margin-bottom: 8px; }
+      .reel-info { padding: 10px 14px 6px; }
+      .reel-hook { font-size: 18px; -webkit-line-clamp: 1; }
+      .reel-caption { -webkit-line-clamp: 1; margin-bottom: 8px; }
+      .reel-cta { padding: 10px 16px; font-size: 15px; }
+      .reel-side { gap: 8px; }
+    }
+    @media (prefers-reduced-motion: reduce) { .reel-spin { animation-duration: 2s; } .reel-act.pop svg { animation: none; } }
+
+    /* Business-type contact form (CTA target) */
+    .reels-contact { display: none; padding: 70px 20px; background: var(--off); scroll-margin-top: 10px; }
+    .reels-contact.on { display: block; }
+    .reels-contact-card {
+      max-width: 460px; margin: 0 auto; background: var(--white);
+      border: 2.5px solid var(--dark); border-radius: 24px; padding: 28px 24px;
+      box-shadow: 6px 6px 0 var(--dark);
+    }
+    .reels-contact-card h2 { font-family: 'Righteous', cursive; font-size: 26px; margin-bottom: 6px; }
+    .reels-contact-card > p { color: var(--grey); font-weight: 500; font-size: 14px; margin-bottom: 8px; }
+    .reels-contact-card label { display: block; font-size: 12px; font-weight: 800; text-transform: uppercase; letter-spacing: 0.8px; color: var(--grey); margin: 14px 0 5px; }
+    .reels-contact-card input, .reels-contact-card select {
+      width: 100%; font: 600 15px 'DM Sans', sans-serif; padding: 13px 14px;
+      border: 2px solid var(--dark); border-radius: 12px; background: var(--white); outline: none;
+    }
+    .reels-contact-card input:focus, .reels-contact-card select:focus { border-color: var(--blue); box-shadow: 3px 3px 0 var(--blue); }
+    .reels-contact-card button {
+      margin-top: 20px; width: 100%; font: 800 15px 'DM Sans', sans-serif; color: var(--white);
+      background: var(--dark); border: 2.5px solid var(--dark); border-radius: 14px; padding: 14px; cursor: pointer;
+      box-shadow: 4px 4px 0 var(--pink);
+    }
+
+    /* =========================================
+       BOTTOM NAV BAR
+       ========================================= */
+    :root { --nav-clear: calc(88px + env(safe-area-inset-bottom)); }
+    footer { padding-bottom: calc(50px + var(--nav-clear)); }
+    .bottom-nav {
+      position: fixed; z-index: 900;
+      left: 50%; transform: translateX(-50%);
+      bottom: calc(env(safe-area-inset-bottom) + 12px);
+      width: min(calc(100% - 24px), 430px);
+      height: 66px;
+      display: flex; align-items: stretch; justify-content: space-around;
+      padding: 0 6px;
+      background: rgba(255, 255, 255, 0.92);
+      backdrop-filter: blur(18px); -webkit-backdrop-filter: blur(18px);
+      border: 2px solid var(--dark);
+      border-radius: 26px;
+      box-shadow: 4px 4px 0 var(--dark), 0 18px 36px rgba(17, 17, 24, 0.16);
+    }
+    .nav-item {
+      flex: 1; min-width: 0;
+      display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 3px;
+      background: none; border: 0; padding: 0; cursor: pointer;
+      color: var(--grey); text-decoration: none;
+      font: 800 10.5px 'DM Sans', sans-serif; letter-spacing: 0.2px;
+      -webkit-tap-highlight-color: transparent;
+    }
+    .nav-ico {
+      width: 40px; height: 28px; border-radius: 14px;
+      display: flex; align-items: center; justify-content: center;
+      transition: background 0.25s, color 0.25s, transform 0.25s;
+    }
+    .nav-ico svg { width: 21px; height: 21px; }
+    .nav-item:active .nav-ico { transform: scale(0.9); }
+    .nav-item.active { color: var(--dark); }
+    .nav-item.active .nav-ico { background: var(--lime); color: var(--dark); }
+
+    .nav-reels { display: none; }
+    .has-reels .nav-reels { display: flex; }
+    .nav-reels .nav-ico {
+      width: 54px; height: 54px; border-radius: 50%;
+      margin-top: -26px;
+      background: linear-gradient(135deg, var(--pink), var(--orange));
+      color: #fff;
+      border: 3px solid #fff;
+      box-shadow: 0 0 0 2px var(--dark), 0 10px 20px rgba(255, 61, 138, 0.38);
+    }
+    .nav-reels .nav-ico svg { width: 24px; height: 24px; margin-left: 2px; }
+    .nav-reels.active .nav-ico { background: linear-gradient(135deg, var(--pink), var(--orange)); color: #fff; transform: translateY(-2px); }
+    .nav-reels span:last-child { margin-top: -2px; }
+
+    @media (prefers-reduced-motion: reduce) { .nav-ico { transition: none; } }
+    @media (min-width: 900px) { .bottom-nav { bottom: 18px; } }
+  </style>
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header>
+    <a href="{{ site.baseurl }}/" class="brand">
+      <img src="https://i.postimg.cc/x9mDND2Q/Ttc-logo.png" alt="TTC Logo">
+      <div>
+        <div class="brand-text">TTC <span>QUIZ</span></div>
+        <div class="brand-sub">Platform</div>
+      </div>
+    </a>
+    <div class="header-actions">
+      <button id="installAppBtn" class="header-cta btn-install">Install TTC Quiz App</button>
+      <a href="https://tusharnanwani80-rgb.github.io/TTC.webpage.com/" class="header-cta btn-visit">Visit our website</a>
+    </div>
+  </header>
+
+  <!-- HERO SECTION -->
+  <main>
+    <section class="hero-wrapper">
+      <div class="hero-content">
+        <div class="hero-study-icons" aria-hidden="true">
+          <span class="study-icon book">
+            <svg viewBox="0 0 24 24"><path d="M4 5.5A2.5 2.5 0 0 1 6.5 3H20v17H6.5A2.5 2.5 0 0 0 4 22V5.5z"></path><path d="M4 5.5V22"></path><path d="M8 7h8"></path><path d="M8 11h6"></path></svg>
+          </span>
+          <span class="study-icon pencil">
+            <svg viewBox="0 0 24 24"><path d="M4 20l4.5-1 10-10a2.1 2.1 0 0 0-3-3l-10 10L4 20z"></path><path d="M13.5 6.5l4 4"></path></svg>
+          </span>
+          <span class="study-icon cap">
+            <svg viewBox="0 0 24 24"><path d="M3 9l9-4 9 4-9 4-9-4z"></path><path d="M7 11v4c0 1.4 2.2 3 5 3s5-1.6 5-3v-4"></path><path d="M21 9v6"></path></svg>
+          </span>
+          <span class="study-icon check">
+            <svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"></path><path d="M19 12a7 7 0 1 1-2.1-5"></path></svg>
+          </span>
+        </div>
+        <div class="hero-chip">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon></svg>
+          CBSE &amp; ICSE chapter practice
+        </div>
+        
+        <h1>Exam-ready quizzes for every <span>chapter.</span></h1>
+        <p>Search your class, pick a chapter, answer MCQs, and get instant explanations for CBSE and ICSE-style exam practice.</p>
+        
+        <!-- THE INLINE ACCORDION MARQUEE WITH CHIBIS -->
+        <div class="initiative-box">
+          <!-- Hidden Reveal Area -->
+          <div class="initiative-reveal" id="initiativeReveal">
+            <div class="reveal-inner">
+              <div class="creator-cards">
+                
+                <!-- Tushar -->
+                <button class="creator-badge delay-1" onclick="openCreatorModal('tushar')">
+                  <div class="c-avatar ca-1">
+                    <div class="c-avatar-clip">
+                      <img src="https://i.postimg.cc/bNR5qNkG/Whats-App-Image-2026-08-08-at-8-07-20-PM.png" alt="Tushar Nanwani" class="chibi-img">
+                    </div>
+                  </div>
+                  <span class="c-name">Tushar Nanwani</span>
+                </button>
+                
+                <!-- Mahek -->
+                <button class="creator-badge delay-2" onclick="openCreatorModal('mahek')">
+                  <div class="c-avatar ca-2">
+                     <div class="c-avatar-clip">
+                      <img src="https://i.postimg.cc/ZKhkTMQs/Remove-background-project-August-08-2026-at-20-10-59.png" alt="Mahek Nanwani" class="chibi-img">
+                     </div>
+                  </div>
+                  <span class="c-name">Mahek Nanwani</span>
+                </button>
+                
+                <!-- Kajal -->
+                <button class="creator-badge delay-3" onclick="openCreatorModal('kajal')">
+                  <div class="c-avatar ca-3">
+                    <div class="c-avatar-clip">
+                      <img src="https://i.postimg.cc/s2GKGVQc/Whats-App-Image-2026-08-08-at-8-07-21-PM-(1).png" alt="Kajal Nanwani" class="chibi-img">
+                    </div>
+                  </div>
+                  <span class="c-name">Kajal Nanwani</span>
+                </button>
+
+              </div>
+            </div>
+          </div>
+
+          <!-- Marquee Footer -->
+          <div class="marquee-trigger" aria-label="Meet the team">
+            <div class="marquee-track">
+              <div class="marquee-text">✦ A PROUD INITIATIVE BY <span>TUSHAR NANWANI, MAHEK NANWANI & KAJAL NANWANI</span> ✦ MEET THE TTC TEAM ✦</div>
+              <div class="marquee-text">✦ A PROUD INITIATIVE BY <span>TUSHAR NANWANI, MAHEK NANWANI & KAJAL NANWANI</span> ✦ MEET THE TTC TEAM ✦</div>
+            </div>
+          </div>
+        </div>
+        <!-- END ACCORDION -->
+
+        <div class="search-container">
+          <svg class="search-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+          <input type="text" id="searchInput" class="search-bar" placeholder="Search for a chapter (e.g. Integers)...">
+        </div>
+      </div>
+    </section>
+
+    <!-- GLOBAL LIVE PULSE -->
+    <section class="pulse-wrap" id="ttcPulseWrap" aria-live="polite">
+      <div class="pulse-banner">
+        <span class="pulse-dot" aria-hidden="true"></span>
+        <span class="pulse-copy">
+          <span class="pulse-kicker">Live TTC Pulse</span>
+          <span class="pulse-text" id="ttcPulseText">Students are practising on TTC Quiz right now.</span>
+        </span>
+        <span class="pulse-proof" id="ttcPulseProof">Active learning</span>
+      </div>
+    </section>
+
+    <!-- REELS: a separate full-screen section. Hidden on the home page; opened only from the bottom nav (or the #reels link). -->
+    <section class="reels-section" id="reels" aria-label="Reels">
+      <div class="reels-top">
+        <div class="reels-progress"><div class="reels-progress-fill" id="reelsProgress"></div></div>
+        <div class="reels-bar">
+          <div class="reels-chips" id="reelsChips" role="group" aria-label="Filter reels by class"></div>
+          <button class="reels-close" id="reelsClose" type="button" aria-label="Close reels">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+          </button>
+        </div>
+      </div>
+      <div class="reels-scroll" id="reelsScroll"></div>
+      <div class="reels-toast" id="reelsToast" role="status" aria-live="polite"></div>
+    </section>
+
+    <!-- FILTERING (AUTOMATED WITH JEKYLL) -->
+    <div class="filter-wrapper" id="quizzes">
+      <div class="filter-label">Filter by Class</div>
+      <div class="filters" id="classFilterContainer">
+        <button class="filter-btn class-filter-btn active" data-class="all">All Classes</button>
+        
+        <!-- This dynamically creates filter buttons based on unique classes in your quizzes -->
+        {% assign unique_classes = site.quizzes | map: 'class' | uniq | sort %}
+        {% for cls in unique_classes %}
+          {% if cls %}
+          <button class="filter-btn class-filter-btn" data-class="{{ cls | downcase | replace: ' ', '-' }}">{{ cls }}</button>
+          {% endif %}
+        {% endfor %}
+      </div>
+
+      <div class="filter-label">Filter by Subject</div>
+      <div class="filters" id="subjectFilterContainer">
+        <button class="filter-btn subject-filter-btn active" data-subject="all">All Subjects</button>
+        
+        <!-- This dynamically creates filter buttons based on unique subjects in your quizzes -->
+        {% assign unique_subjects = site.quizzes | map: 'subject' | uniq | sort %}
+        {% for subj in unique_subjects %}
+          {% if subj %}
+          <button class="filter-btn subject-filter-btn" data-subject="{{ subj | downcase }}">{{ subj }}</button>
+          {% endif %}
+        {% endfor %}
+      </div>
+    </div>
+
+    <!-- QUIZ GRID (AUTOMATED WITH JEKYLL) -->
+    <section class="quiz-container">
+      <div class="grid" id="quizGrid">
+        
+        <!-- This loop dynamically creates cards based on your _quizzes folder -->
+        {% for quiz in site.quizzes %}
+        {% assign subjColorClass = "c-default" %}
+        {% if quiz.subject == 'Maths' %}{% assign subjColorClass = "c-maths" %}{% endif %}
+        {% if quiz.subject == 'Science' %}{% assign subjColorClass = "c-science" %}{% endif %}
+        {% if quiz.subject == 'English' %}{% assign subjColorClass = "c-english" %}{% endif %}
+
+        {% assign subjTextColor = "var(--orange)" %}
+        {% if quiz.subject == 'Maths' %}{% assign subjTextColor = "var(--blue)" %}{% endif %}
+        {% if quiz.subject == 'Science' %}{% assign subjTextColor = "var(--lime)" %}{% endif %}
+        {% if quiz.subject == 'English' %}{% assign subjTextColor = "var(--pink)" %}{% endif %}
+
+        <a href="{{ quiz.url | relative_url }}" class="card {{ subjColorClass }}" data-class="{{ quiz.class | downcase | replace: ' ', '-' }}" data-subject="{{ quiz.subject | downcase }}" data-title="{{ quiz.title | downcase }} {{ quiz.subject | downcase }} {{ quiz.class | downcase }}">
+          <div class="card-meta">
+            <span class="class-tag">{{ quiz.class }}</span>
+            <span class="q-count">
+              <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+              {{ quiz.questions }} Qs
+            </span>
+          </div>
+          <h3>{{ quiz.title }}</h3>
+          <p>{{ quiz.description }}</p>
+          <div class="card-footer">
+            <span class="subj-tag" style="color: {{ subjTextColor }};">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="2" width="16" height="20" rx="2" ry="2"></rect><line x1="9" y1="9" x2="15" y2="9"></line><line x1="9" y1="13" x2="15" y2="13"></line><line x1="9" y1="17" x2="15" y2="17"></line></svg>
+              {{ quiz.subject }}
+            </span>
+            <div class="play-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
+            </div>
+          </div>
+        </a>
+        {% endfor %}
+
+        <!-- No Results -->
+        <div class="no-results" id="noResults">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line><line x1="9" y1="9" x2="13" y2="13"></line><line x1="13" y1="9" x2="9" y2="13"></line></svg>
+          <h3>Oops! 🧠</h3>
+          <p>We couldn't find a quiz matching your search. Check back soon!</p>
+        </div>
+
+      </div>
+    </section>
+
+    <section class="reels-contact" id="contact">
+      <div class="reels-contact-card">
+        <h2>Join Tushar Tuition Classes</h2>
+        <p>Choose your class or subject and we will reply on WhatsApp with batch timings and a free demo class.</p>
+        <form id="contactForm">
+          <label for="bizType">Class or subject</label>
+          <select id="bizType" required></select>
+          <label for="contactName">Student name</label>
+          <input type="text" id="contactName" required autocomplete="name" maxlength="80">
+          <label for="contactPhone">Parent phone (optional)</label>
+          <input type="tel" id="contactPhone" autocomplete="tel" maxlength="20">
+          <button type="submit">Enquire on WhatsApp</button>
+        </form>
+      </div>
+    </section>
+
+    <!-- 🧠 GEO LAYER: WHY TTC & FAQ 🧠 -->
+    <section class="geo-section">
+      <div class="geo-inner">
+        
+        <!-- Why TTC Grid with Premium SVGs -->
+        <div class="geo-header">
+          <h2>Why Choose TTC Quiz Platform?</h2>
+          <p>Built by educators. Powered by technology. Designed to make student revision highly effective.</p>
+        </div>
+
+        <div class="why-grid">
+          <div class="why-card">
+            <div class="why-icon-wrap icon-blue">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H20v20H6.5a2.5 2.5 0 0 1 0-5H20"></path><polyline points="14 2 14 8 20 8"></polyline></svg>
+            </div>
+            <h3>CBSE Aligned</h3>
+            <p>Every question is meticulously mapped to the latest CBSE syllabus and NCERT textbook guidelines.</p>
+          </div>
+          
+          <div class="why-card">
+            <div class="why-icon-wrap icon-orange">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon></svg>
+            </div>
+            <h3>Instant Explanations</h3>
+            <p>Don't just know if you are right or wrong. Detailed logic provided for every single answer.</p>
+          </div>
+          
+          <div class="why-card">
+            <div class="why-icon-wrap icon-pink">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>
+            </div>
+            <h3>PDF Reports</h3>
+            <p>Instantly generate and download a comprehensive PDF report of your quiz attempt to track progress.</p>
+          </div>
+          
+          <div class="why-card">
+            <div class="why-icon-wrap icon-green">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path><polyline points="9 12 11 14 15 10"></polyline></svg>
+            </div>
+            <h3>100% Free</h3>
+            <p>Our quizzes are completely free to use. Quality educational tools accessible to every student.</p>
+          </div>
+        </div>
+
+        <!-- Sleek FAQ Accordion -->
+        <div class="geo-header">
+          <h2>Frequently Asked Questions</h2>
+          <p>Everything you need to know about learning with Tushar Tuition Classes.</p>
+        </div>
+
+        <div class="faq-container">
+          <div class="faq-item">
+            <div class="faq-question">
+              <div class="faq-bullet-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><path d="M12 16v-4"></path><path d="M12 8h.01"></path></svg>
+              </div>
+              <span class="faq-question-text">What is the TTC Quiz Platform?</span>
+              <svg class="faq-chevron" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
+            </div>
+            <div class="faq-answer">The TTC Quiz Platform is a free online educational resource created by Tushar Tuition Classes. It offers chapter-wise MCQ quizzes for Class 6 to Class 10 students, complete with instant scores and detailed explanations.</div>
+          </div>
+          
+          <div class="faq-item">
+            <div class="faq-question">
+              <div class="faq-bullet-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
+              </div>
+              <span class="faq-question-text">Are these quizzes aligned with the CBSE syllabus?</span>
+              <svg class="faq-chevron" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
+            </div>
+            <div class="faq-answer">Yes, all TTC quizzes are meticulously designed to align with the latest CBSE syllabus and NCERT textbooks, making them perfect for school exam preparation and revision.</div>
+          </div>
+          
+          <div class="faq-item">
+            <div class="faq-question">
+              <div class="faq-bullet-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="5" width="20" height="14" rx="2"></rect><line x1="2" y1="10" x2="22" y2="10"></line></svg>
+              </div>
+              <span class="faq-question-text">Do I need to pay to take these quizzes?</span>
+              <svg class="faq-chevron" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
+            </div>
+            <div class="faq-answer">No! The online quizzes provided on the TTC Quiz Platform are 100% free for all students to help democratize quality education.</div>
+          </div>
+          
+          <div class="faq-item">
+            <div class="faq-question">
+              <div class="faq-bullet-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="20" x2="18" y2="10"></line><line x1="12" y1="20" x2="12" y2="4"></line><line x1="6" y1="20" x2="6" y2="14"></line></svg>
+              </div>
+              <span class="faq-question-text">How do I get my quiz results?</span>
+              <svg class="faq-chevron" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
+            </div>
+            <div class="faq-answer">Upon completing a quiz, you instantly receive your score, a complete breakdown of right and wrong answers, and the option to download a comprehensive PDF report of your performance.</div>
+          </div>
+          
+          <div class="faq-item">
+            <div class="faq-question">
+              <div class="faq-bullet-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+              </div>
+              <span class="faq-question-text">Where is Tushar Tuition Classes located?</span>
+              <svg class="faq-chevron" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
+            </div>
+            <div class="faq-answer">Tushar Tuition Classes is a premier offline coaching institute located in Wardha, helping students achieve academic excellence across core subjects.</div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <!-- BOTTOM NAV -->
+  <nav class="bottom-nav" id="bottomNav" aria-label="Main">
+    <button class="nav-item active" type="button" data-target="top">
+      <span class="nav-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 11.5 12 4l9 7.5"/><path d="M5 10v10h14V10"/><path d="M10 20v-6h4v6"/></svg></span>
+      <span>Home</span>
+    </button>
+    <button class="nav-item" type="button" data-target="quizzes">
+      <span class="nav-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="3" width="14" height="18" rx="2.5"/><path d="m9 12 2 2 4-4"/><path d="M9 17h6"/></svg></span>
+      <span>Quizzes</span>
+    </button>
+    <button class="nav-item nav-reels" type="button" data-target="reels">
+      <span class="nav-ico"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M7 4.6v14.8a1 1 0 0 0 1.5.86l12-7.4a1 1 0 0 0 0-1.72l-12-7.4A1 1 0 0 0 7 4.6Z"/></svg></span>
+      <span>Reels</span>
+    </button>
+    <button class="nav-item" type="button" data-target="contact">
+      <span class="nav-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 9.5 12 5l10 4.5-10 4.5L2 9.5Z"/><path d="M6 11.8V16c0 1.4 2.7 3 6 3s6-1.6 6-3v-4.2"/><path d="M22 9.5V15"/></svg></span>
+      <span>Classes</span>
+    </button>
+    <a class="nav-item" id="navChat" href="https://wa.me/917517445450?text=Hello%2C%20I%20would%20like%20to%20know%20about%20Tushar%20Tuition%20Classes." target="_blank" rel="noopener noreferrer">
+      <span class="nav-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.4 8.4 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.4 8.4 0 0 1-3.8-.9L3 21l1.9-5.7a8.4 8.4 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.4 8.4 0 0 1 3.8-.9h.5a8.5 8.5 0 0 1 8 8v.5Z"/></svg></span>
+      <span>Chat</span>
+    </a>
+  </nav>
+
+  <!-- CREATOR MODAL -->
+  <dialog id="creatorModal" class="creator-modal">
+    <div class="creator-modal-card" id="creatorModalCard">
+      <button class="cm-close-btn" onclick="closeCreatorModal()" aria-label="Close modal">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+      </button>
+      
+      <div class="cm-header">
+        <div class="cm-avatar-wrap" id="cmAvatarWrap">
+          <img src="" alt="Creator" id="cmAvatarImg" class="cm-img">
+        </div>
+        <div class="cm-title-wrap">
+          <h3 id="cmName">Name</h3>
+          <span class="cm-role" id="cmSubjects">Subjects</span>
+        </div>
+      </div>
+      
+      <div class="cm-body">
+        <p id="cmBio">Bio text</p>
+      </div>
+      
+      <div class="cm-footer">
+        <a href="https://maps.app.goo.gl/etALLY3oKAU1tUkW8" target="_blank" class="cm-cta cm-cta-offline">
+          <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+          Join Offline Classes
+        </a>
+        <a href="#" target="_blank" id="cmWhatsappBtn" class="cm-cta cm-cta-online">
+          <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path></svg>
+          Join Online Classes
+        </a>
+      </div>
+    </div>
+  </dialog>
+
+  <!-- GEO & SEO FOOTER -->
+  <footer>
+    <div class="footer-content">
+      <h4>About TTC Quiz Platform</h4>
+      <p>TTC Quiz is an educational initiative proudly created by <strong>Tushar Nanwani, Mahek Nanwani, and Kajal Nanwani</strong> through <strong>Tushar Tuition Classes</strong> in Wardha. We provide meticulously crafted chapter-wise quizzes for CBSE students from Class 6 to 10. Our goal is to make learning interactive, trackable, and conceptually clear.</p>
+      
+      <div class="seo-links">
+        <a href="https://g.page/r/CdUkswJ0ZulAEBE/review" target="_blank">Join Offline Classes</a>
+        <a href="{{ site.baseurl }}/sitemap.xml">Sitemap</a>
+        <a href="#">Contact Us</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts: Filter, Search, Marquee, Modal, and FAQ Logic -->
+  <script>
+    // --- 0. ACCORDION & MODAL LOGIC ---
+    function toggleInitiative() {
+      const revealArea = document.getElementById('initiativeReveal');
+      if(revealArea) revealArea.classList.toggle('open');
+    }
+
+    // Modal Data
+    const creatorData = {
+      tushar: {
+        name: "Tushar Nanwani",
+        subjects: "Maths, English, Economics, Geometry, Algebra",
+        bio: "Dedicated to making the most challenging subjects intuitive and fun. Whether it's mastering complex geometry theorems, solving algebra, or breaking down economics, my goal is to ensure every student builds a rock-solid, confident foundation for their board exams.",
+        img: "https://i.postimg.cc/bNR5qNkG/Whats-App-Image-2026-08-08-at-8-07-20-PM.png",
+        colorClass: "ca-1"
+      },
+      mahek: {
+        name: "Mahek Nanwani",
+        subjects: "Chemistry, Physics, Biology, History, Civics, Geography",
+        bio: "Passionate about unlocking the mysteries of Science and Social Studies. I strive to bring textbooks to life, turning complex chemical reactions, physics laws, and vast historical events into highly engaging, easy-to-remember conceptual lessons.",
+        img: "https://i.postimg.cc/ZKhkTMQs/Remove-background-project-August-08-2026-at-20-10-59.png",
+        colorClass: "ca-2"
+      },
+      kajal: {
+        name: "Kajal Nanwani",
+        subjects: "Hindi, Marathi, Hindi Vyakaran, Marathi Vyakaran",
+        bio: "Language is the ultimate key to brilliant communication. I specialize in teaching Hindi and Marathi literatures, with a meticulous focus on Vyakaran (Grammar) to help students score top marks and express themselves flawlessly in board exams.",
+        img: "https://i.postimg.cc/s2GKGVQc/Whats-App-Image-2026-08-08-at-8-07-21-PM-(1).png",
+        colorClass: "ca-3"
+      }
+    };
+
+    const modal = document.getElementById('creatorModal');
+    const modalWrap = document.getElementById('cmAvatarWrap');
+    const modalImg = document.getElementById('cmAvatarImg');
+    const modalName = document.getElementById('cmName');
+    const modalSubjects = document.getElementById('cmSubjects');
+    const modalBio = document.getElementById('cmBio');
+    const modalInnerCard = document.getElementById('creatorModalCard');
+    const modalWhatsappBtn = document.getElementById('cmWhatsappBtn');
+
+    function openCreatorModal(creatorKey) {
+      const data = creatorData[creatorKey];
+      if (!data) return;
+
+      // Reset color classes
+      modalWrap.classList.remove('ca-1', 'ca-2', 'ca-3');
+      
+      // Inject Data
+      modalWrap.classList.add(data.colorClass);
+      modalImg.src = data.img;
+      modalImg.alt = data.name;
+      modalName.textContent = data.name;
+      modalSubjects.textContent = data.subjects;
+      modalBio.textContent = data.bio;
+      
+      // Construct dynamic WhatsApp Link
+      const phoneNumber = "917517445450"; // Added 91 country code for India
+      const rawMessage = `Hello! I was looking at the TTC Quiz Platform and I'm interested in joining the Online Classes taught by ${data.name} for ${data.subjects}. Can I get more details?`;
+      const encodedMessage = encodeURIComponent(rawMessage);
+      modalWhatsappBtn.href = `https://wa.me/${phoneNumber}?text=${encodedMessage}`;
+
+      // Remove closing animation if it was running, then show
+      modalInnerCard.classList.remove('closing');
+      modal.showModal();
+      document.body.style.overflow = 'hidden'; // Stop background scrolling
+    }
+
+    function closeCreatorModal() {
+      // Add closing animation
+      modalInnerCard.classList.add('closing');
+      
+      // Wait for animation to finish before actually closing
+      setTimeout(() => {
+        modal.close();
+        modalInnerCard.classList.remove('closing');
+        document.body.style.overflow = ''; // Restore scrolling
+      }, 240); // Matches the CSS animation duration
+    }
+
+    // Close modal when clicking the backdrop (outside the card)
+    modal.addEventListener('click', (e) => {
+      const dialogDimensions = modalInnerCard.getBoundingClientRect();
+      if (
+        e.clientX < dialogDimensions.left ||
+        e.clientX > dialogDimensions.right ||
+        e.clientY < dialogDimensions.top ||
+        e.clientY > dialogDimensions.bottom
+      ) {
+        closeCreatorModal();
+      }
+    });
+
+    // --- 1. LIVE PULSE SCRIPT ---
+    const TTC_STATS_URL = 'https://script.google.com/macros/s/AKfycbyzrJ7T76IeXnPwbqTqV8Mksc7JRnbaVBgbUXVeX1fBXLWtdxS6XOgr4wC0_LqILaGj/exec';
+    const TTC_STATS_TIMEOUT_MS = 1000;
+
+    loadTtcPulse();
+
+    async function loadTtcPulse() {
+      const wrap = document.getElementById('ttcPulseWrap');
+      const text = document.getElementById('ttcPulseText');
+      const proof = document.getElementById('ttcPulseProof');
+      if (!wrap || !text || !proof || !TTC_STATS_URL) return;
+
+      const controller = new AbortController();
+      const timer = setTimeout(() => controller.abort(), TTC_STATS_TIMEOUT_MS);
+
+      try {
+        const url = TTC_STATS_URL + '?mode=stats&t=' + Date.now();
+        const res = await fetch(url, { signal: controller.signal, cache: 'no-store' });
+        clearTimeout(timer);
+        if (!res.ok) return;
+
+        const stats = await res.json();
+        if (!stats || !stats.show) return;
+
+        const totalAttempts = Number(stats.totalQuizAttempts || 0);
+        const completed = Number(stats.completedThisWeek || 0);
+        const helpful = Number(stats.helpfulPercent || 0);
+        if (!totalAttempts || !helpful) return;
+
+        text.textContent = totalAttempts + ' total quiz attempts | ' + completed + ' completed this week | ' + helpful + '% students felt more confident after practice.';
+        proof.textContent = totalAttempts + ' attempts';
+        wrap.classList.add('is-visible');
+      } catch (err) {
+        clearTimeout(timer);
+      }
+    }
+
+    // --- 2. FILTER & SEARCH LOGIC ---
+    const classFilterBtns = document.querySelectorAll('.class-filter-btn');
+    const subjectFilterBtns = document.querySelectorAll('.subject-filter-btn');
+    const cards = document.querySelectorAll('.card');
+    const searchInput = document.getElementById('searchInput');
+    const noResults = document.getElementById('noResults');
+
+    classFilterBtns.forEach(btn => {
+      btn.addEventListener('click', () => {
+        classFilterBtns.forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+        filterQuizzes();
+      });
+    });
+
+    subjectFilterBtns.forEach(btn => {
+      btn.addEventListener('click', () => {
+        subjectFilterBtns.forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+        filterQuizzes();
+      });
+    });
+
+    if(searchInput) {
+      searchInput.addEventListener('input', filterQuizzes);
+    }
+
+    function filterQuizzes() {
+      const activeClassBtn = document.querySelector('.class-filter-btn.active');
+      const activeSubjectBtn = document.querySelector('.subject-filter-btn.active');
+      
+      const activeClassFilter = activeClassBtn ? activeClassBtn.dataset.class : 'all';
+      const activeSubjectFilter = activeSubjectBtn ? activeSubjectBtn.dataset.subject : 'all';
+      const searchTerm = searchInput ? searchInput.value.toLowerCase().trim() : '';
+      let visibleCount = 0;
+
+      cards.forEach(card => {
+        const cardClass = card.dataset.class;
+        const cardSubject = card.dataset.subject;
+        const cardTitle = card.dataset.title;
+
+        const matchesClass = activeClassFilter === 'all' || activeClassFilter === cardClass;
+        const matchesSubject = activeSubjectFilter === 'all' || activeSubjectFilter === cardSubject;
+        const matchesSearch = searchTerm === '' || cardTitle.includes(searchTerm);
+
+        if (matchesClass && matchesSubject && matchesSearch) {
+          card.style.display = 'flex';
+          visibleCount++;
+        } else {
+          card.style.display = 'none';
+        }
+      });
+
+      if(noResults) {
+        noResults.style.display = visibleCount === 0 ? 'block' : 'none';
+      }
+    }
+
+    // --- 3. FAQ ACCORDION LOGIC ---
+    const faqItems = document.querySelectorAll('.faq-item');
+    
+    faqItems.forEach(item => {
+      const question = item.querySelector('.faq-question');
+      question.addEventListener('click', () => {
+        const isActive = item.classList.contains('active');
+        
+        // Close all other items
+        faqItems.forEach(otherItem => {
+          otherItem.classList.remove('active');
+        });
+
+        // Toggle the clicked item
+        if (!isActive) {
+          item.classList.add('active');
+        }
+      });
+    });
+  </script>
+  
+  <script>
+    // --- 4. PWA SERVICE WORKER LOGIC ---
+    if ('serviceWorker' in navigator) {
+      window.addEventListener('load', () => {
+        navigator.serviceWorker.register('sw.js')
+          .then(registration => {
+            console.log('Service Worker registered!', registration.scope);
+          })
+          .catch(error => {
+            console.error('Service Worker registration failed:', error);
+          });
+      });
+    }
+
+    let deferredPrompt;
+    let isAppInstalled = false;
+
+    window.addEventListener('beforeinstallprompt', (e) => {
+      e.preventDefault();
+      deferredPrompt = e;
+    });
+
+    window.addEventListener('appinstalled', () => {
+      deferredPrompt = null;
+      isAppInstalled = true;
+      setTimeout(() => {
+        showDynamicIsland("App installed successfully!", true);
+      }, 3000); 
+    });
+
+    if (window.matchMedia('(display-mode: standalone)').matches || window.navigator.standalone === true) {
+      isAppInstalled = true;
+    }
+
+    const installBtn = document.getElementById('installAppBtn');
+    if (installBtn) {
+      installBtn.addEventListener('click', async () => {
+        if (isAppInstalled || window.matchMedia('(display-mode: standalone)').matches) {
+           showDynamicIsland("App is already installed", true);
+           return;
+        }
+        
+        if (deferredPrompt) {
+          deferredPrompt.prompt();
+          const { outcome } = await deferredPrompt.userChoice;
+          if (outcome === 'accepted') {
+            deferredPrompt = null;
+            showDynamicIsland("Installing...", false);
+          }
+        } else {
+          showDynamicIsland("App is already installed", true);
+        }
+      });
+    }
+
+    function showDynamicIsland(text, isDone) {
+      let di = document.getElementById('dynamicIsland');
+      if (!di) {
+        di = document.createElement('div');
+        di.id = 'dynamicIsland';
+        di.className = 'dynamic-island';
+        di.innerHTML = '<div class="di-content"><div class="di-icon"></div><span id="diText"></span></div>';
+        document.body.appendChild(di);
+      }
+      
+      const diText = di.querySelector('#diText');
+      const diIcon = di.querySelector('.di-icon');
+      
+      diText.textContent = text;
+      if (isDone) {
+        diIcon.classList.add('done');
+        diIcon.innerHTML = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>';
+      } else {
+        diIcon.classList.remove('done');
+        diIcon.innerHTML = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>';
+      }
+      
+      requestAnimationFrame(() => {
+        di.classList.add('active');
+      });
+      
+      if (isDone) {
+        setTimeout(() => {
+          di.classList.remove('active');
+        }, 3500);
+      }
+    }
+  </script>
+  <script>
+    // --- 5. REELS (a separate full-screen section, opened from the bottom nav) ---
+    (function () {
+      // Paste your deployed Apps Script web app URL (ends with /exec). Same URL as in reels-admin.html.
+      var REELS_API_URL = 'PASTE_REELS_WEB_APP_URL';
+      var CONTACT_PHONE = '917517445450';
+      var YT_ORIGIN = 'https://www.youtube-nocookie.com';
+      var ID_RE = /^[A-Za-z0-9_-]{11}$/;
+      var LIKED_KEY = 'ttc_reels_liked';
+
+      // Jekyll supplies your real class names (same ones the quiz filters use) and the site base path.
+      {% assign ttc_class_list = site.quizzes | map: 'class' | uniq | sort %}
+      var QUIZ_CLASSES = {{ ttc_class_list | jsonify }};
+      var BASEURL = {{ site.baseurl | default: '' | jsonify }};
+
+      var section = document.getElementById('reels');
+      var scroller = document.getElementById('reelsScroll');
+      var chipsEl = document.getElementById('reelsChips');
+      var fillEl = document.getElementById('reelsProgress');
+      var closeBtn = document.getElementById('reelsClose');
+      var toastEl = document.getElementById('reelsToast');
+      var contactEl = document.getElementById('contact');
+      var bizSelect = document.getElementById('bizType');
+      if (!section || !scroller || !REELS_API_URL || REELS_API_URL.indexOf('PASTE_') === 0) return;
+
+      var allReels = [], reels = [], slides = [], chips = [];
+      var active = -1, muted = true, isOpen = false, viaHash = false;
+      var selected = 'all', enquiryClass = '', io = null, toastTimer = null;
+      var liked = loadLiked();
+
+      function numOf(v) { var m = String(v == null ? '' : v).match(/\d+/); return m ? parseInt(m[0], 10) : 0; }
+      var classLabel = {};
+      (Array.isArray(QUIZ_CLASSES) ? QUIZ_CLASSES : []).forEach(function (c) {
+        var n = numOf(c); if (n && c) classLabel[n] = String(c).trim();
+      });
+      function labelFor(n) { return classLabel[n] || ('Class ' + n); }
+
+      var ICON = {
+        heart: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.8 5.6a5.2 5.2 0 0 0-7.4 0L12 7l-1.4-1.4a5.2 5.2 0 0 0-7.4 7.4L12 21.8l8.8-8.8a5.2 5.2 0 0 0 0-7.4z"/></svg>',
+        share: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 2 11 13"/><path d="M22 2l-7 20-4-9-9-4 20-7z"/></svg>',
+        on: '<svg class="ic-on" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5" fill="currentColor"/><path d="M15.5 8.5a5 5 0 0 1 0 7"/><path d="M19 5a10 10 0 0 1 0 14"/></svg>',
+        off: '<svg class="ic-off" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5" fill="currentColor"/><line x1="22" y1="9" x2="16" y2="15"/><line x1="16" y1="9" x2="22" y2="15"/></svg>',
+        ig: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor"/></svg>',
+        yt: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="5" width="20" height="14" rx="4"/><polygon points="10 9 15 12 10 15 10 9" fill="currentColor"/></svg>',
+        arrow: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>'
+      };
+
+      // ---- load ----
+      var ctrl = new AbortController();
+      var timer = setTimeout(function () { ctrl.abort(); }, 8000);
+      fetch(REELS_API_URL + '?mode=reels&t=' + Date.now(), { signal: ctrl.signal, cache: 'no-store' })
+        .then(function (r) { clearTimeout(timer); return r.ok ? r.json() : []; })
+        .then(function (data) {
+          if (!Array.isArray(data)) return;
+          allReels = data.filter(function (r) { return r && ID_RE.test(String(r.youtube_id || '')); })
+                         .map(function (r) {
+                           r.id = String(r.id);
+                           r.classes = (Array.isArray(r.classes) ? r.classes : []).map(Number).filter(function (n) { return n > 0; });
+                           r.cta_url = String(r.cta_url || '').trim();
+                           r.likes = Math.max(0, Number(r.likes) || 0);
+                           return r;
+                         })
+                         .sort(function (a, b) { return (Number(a.order) || 0) - (Number(b.order) || 0); });
+          if (allReels.length) setup();
+        })
+        .catch(function () { clearTimeout(timer); });
+
+      function safeHttps(u) {
+        try { var x = new URL(u); return x.protocol === 'https:' ? x.href : ''; } catch (e) { return ''; }
+      }
+      function el(tag, cls, text) {
+        var n = document.createElement(tag);
+        if (cls) n.className = cls;
+        if (text != null) n.textContent = text;
+        return n;
+      }
+      function toast(msg) {
+        toastEl.textContent = msg;
+        toastEl.classList.add('show');
+        clearTimeout(toastTimer);
+        toastTimer = setTimeout(function () { toastEl.classList.remove('show'); }, 2400);
+      }
+
+      // ---- setup (runs once, only when there is at least one published reel) ----
+      function setup() {
+        reels = allReels.slice();
+        buildChips();
+        renderSlides();
+        buildContact();
+        document.body.classList.add('has-reels'); // reveals the Reels tab in the bottom nav
+        contactEl.classList.add('on');
+
+        closeBtn.addEventListener('click', function () { closeReels(); });
+        document.addEventListener('keydown', function (e) { if (e.key === 'Escape' && isOpen) closeReels(); });
+        window.addEventListener('popstate', function () {
+          if (isOpen && !(history.state && history.state.ttcReels)) closeReels(true);
+        });
+        window.addEventListener('message', onYtMessage);
+        window.TTCReels = { open: openReels, close: closeReels, isOpen: function () { return isOpen; } };
+        if (location.hash === '#reels') openReels(true);
+      }
+
+      // ---- class chips: All + every class that has at least one reel ----
+      function buildChips() {
+        var set = {};
+        allReels.forEach(function (r) { r.classes.forEach(function (n) { set[n] = 1; }); });
+        var nums = Object.keys(set).map(Number).sort(function (a, b) { return a - b; });
+        chipsEl.innerHTML = ''; chips = [];
+        if (!nums.length) { chipsEl.style.visibility = 'hidden'; return; }
+        function add(value, text) {
+          var c = el('button', 'reel-chip', text);
+          c.type = 'button';
+          c.dataset.value = String(value);
+          c.addEventListener('click', function () { selectClass(value); });
+          chipsEl.appendChild(c); chips.push(c);
+        }
+        add('all', 'All classes');
+        nums.forEach(function (n) { add(n, labelFor(n)); });
+        markChip();
+      }
+      function markChip() {
+        chips.forEach(function (c) { c.classList.toggle('active', c.dataset.value === String(selected)); });
+      }
+      function selectClass(value) {
+        selected = value;
+        reels = value === 'all' ? allReels.slice()
+              : allReels.filter(function (r) { return r.classes.indexOf(Number(value)) !== -1; });
+        markChip();
+        renderSlides();
+        if (isOpen && slides.length) activate(0);
+      }
+
+      // ---- links ----
+      function resolveLink(u) {
+        u = String(u || '').trim();
+        if (/^https:\/\//i.test(u)) return u;
+        if (u.charAt(0) === '/' && u.charAt(1) !== '/') {
+          var base = String(BASEURL || '').replace(/\/$/, '');
+          if (base && (u === base || u.indexOf(base + '/') === 0)) base = '';
+          return location.origin + base + u;
+        }
+        return '';
+      }
+      function portalUrl() { return location.origin + location.pathname.replace(/index\.html$/, ''); }
+
+      // ---- likes (saved on this phone, and counted in the sheet) ----
+      function loadLiked() {
+        try { var a = JSON.parse(localStorage.getItem(LIKED_KEY) || '[]'); return Array.isArray(a) ? a : []; } catch (e) { return []; }
+      }
+      function saveLiked() { try { localStorage.setItem(LIKED_KEY, JSON.stringify(liked)); } catch (e) {} }
+      function isLiked(r) { return liked.indexOf(r.id) !== -1; }
+      function fmt(n) { return n >= 1000 ? (n / 1000).toFixed(1).replace(/\.0$/, '') + 'k' : String(n); }
+      function paintLike(r, s, pop) {
+        s.likeBtn.classList.toggle('liked', isLiked(r));
+        s.likeBtn.setAttribute('aria-pressed', isLiked(r) ? 'true' : 'false');
+        s.likeLbl.textContent = r.likes > 0 ? fmt(r.likes) : 'Like';
+        if (pop) { s.likeBtn.classList.remove('pop'); void s.likeBtn.offsetWidth; s.likeBtn.classList.add('pop'); }
+      }
+      function setLike(r, s, on) {
+        if (on === isLiked(r)) return;
+        if (on) { liked.push(r.id); r.likes += 1; }
+        else { liked = liked.filter(function (x) { return x !== r.id; }); r.likes = Math.max(0, r.likes - 1); }
+        saveLiked();
+        paintLike(r, s, true);
+        try {
+          fetch(REELS_API_URL, { method: 'POST', headers: { 'Content-Type': 'text/plain;charset=utf-8' },
+            body: JSON.stringify({ action: 'like', id: r.id, delta: on ? 1 : -1 }), keepalive: true }).catch(function () {});
+        } catch (e) {}
+      }
+
+      // ---- share: portal (or this chapter's quiz) link + the YouTube link ----
+      function shareReel(r) {
+        var quiz = resolveLink(r.cta_url);
+        var lead = quiz ? "Solve this chapter's quiz free on TTC Quiz:" : 'Solve free chapter-wise quizzes on TTC Quiz:';
+        var text = lead + '\n' + (quiz || portalUrl()) + '\n\nWatch the video:\nhttps://youtube.com/shorts/' + r.youtube_id;
+        if (navigator.share) { navigator.share({ title: 'TTC Quiz', text: text }).catch(function () {}); return; }
+        copyText(text).then(function () { toast('Copied. Paste it in WhatsApp or anywhere.'); })
+                      .catch(function () { toast('Could not copy on this browser.'); });
+      }
+      function copyText(t) {
+        if (navigator.clipboard && navigator.clipboard.writeText) return navigator.clipboard.writeText(t);
+        return new Promise(function (res, rej) {
+          try {
+            var ta = document.createElement('textarea');
+            ta.value = t; ta.style.cssText = 'position:fixed;opacity:0;top:0;left:0';
+            document.body.appendChild(ta); ta.select();
+            var ok = document.execCommand('copy'); ta.remove();
+            ok ? res() : rej();
+          } catch (e) { rej(e); }
+        });
+      }
+
+      // ---- slides ----
+      function action(tag, label, iconHtml) {
+        var b = el(tag, 'reel-act');
+        if (tag === 'button') b.type = 'button';
+        var ico = el('span', 'ico'); ico.innerHTML = iconHtml;
+        var lbl = el('span', null, label);
+        b.append(ico, lbl);
+        return { btn: b, lbl: lbl };
+      }
+
+      function renderSlides() {
+        unmountAll();
+        scroller.innerHTML = '';
+        slides = []; active = -1;
+        scroller.scrollTop = 0;
+
+        reels.forEach(function (r) {
+          var slide = el('div', 'reel-slide');
+          var col = el('div', 'reel-col');
+          var s = { slide: slide, video: null, iframe: null, failTimer: null, showTimer: null, likeBtn: null, likeLbl: null };
+
+          // title band (above the video)
+          var info = el('div', 'reel-info');
+          info.appendChild(el('span', 'reel-tag', r.title));
+          info.appendChild(el('div', 'reel-hook', r.hook));
+          col.appendChild(info);
+
+          // video card + action rail
+          var stage = el('div', 'reel-stage');
+          var video = el('div', 'reel-video');
+          var poster = el('img', 'reel-poster');
+          poster.alt = ''; poster.loading = 'lazy'; poster.decoding = 'async';
+          poster.src = 'https://i.ytimg.com/vi/' + r.youtube_id + '/hqdefault.jpg';
+          poster.addEventListener('error', function () { poster.remove(); });
+          video.appendChild(poster);
+          video.appendChild(el('div', 'reel-spin'));
+
+          var fb = el('div', 'reel-fallback');
+          fb.appendChild(el('div', null, 'This video could not be loaded.'));
+          var fbLink = el('a');
+          fbLink.href = 'https://youtube.com/shorts/' + r.youtube_id;
+          fbLink.target = '_blank'; fbLink.rel = 'noopener noreferrer';
+          fbLink.innerHTML = ICON.yt;
+          fbLink.appendChild(document.createTextNode('Watch on YouTube'));
+          fb.appendChild(fbLink);
+          video.appendChild(fb);
+
+          // tap = sound on/off, double tap = like (taps never reach YouTube, so it cannot pause or show its own title bar)
+          var tap = el('div', 'reel-tap');
+          var lastTap = 0, tapTimer = null;
+          tap.addEventListener('click', function (ev) {
+            var now = Date.now();
+            if (now - lastTap < 300) {
+              clearTimeout(tapTimer); lastTap = 0;
+              var rect = video.getBoundingClientRect();
+              var b = el('div', 'reel-burst'); b.innerHTML = ICON.heart;
+              b.style.left = (ev.clientX - rect.left) + 'px'; b.style.top = (ev.clientY - rect.top) + 'px';
+              video.appendChild(b); setTimeout(function () { b.remove(); }, 800);
+              if (!isLiked(r)) setLike(r, s, true);
+            } else {
+              lastTap = now;
+              tapTimer = setTimeout(function () {
+                toggleSound();
+                var f = el('div', 'reel-flash'); f.innerHTML = muted ? ICON.off : ICON.on;
+                video.appendChild(f); setTimeout(function () { f.remove(); }, 750);
+              }, 300);
+            }
+          });
+          video.appendChild(tap);
+          stage.appendChild(video);
+
+          var side = el('div', 'reel-side');
+          var like = action('button', 'Like', ICON.heart);
+          like.btn.setAttribute('aria-label', 'Like');
+          like.btn.addEventListener('click', function () { setLike(r, s, !isLiked(r)); });
+          side.appendChild(like.btn);
+          var share = action('button', 'Share', ICON.share);
+          share.btn.setAttribute('aria-label', 'Share');
+          share.btn.addEventListener('click', function () { shareReel(r); });
+          side.appendChild(share.btn);
+          var snd = action('button', 'Sound', ICON.on + ICON.off);
+          snd.btn.setAttribute('aria-label', 'Sound on or off');
+          snd.btn.addEventListener('click', toggleSound);
+          side.appendChild(snd.btn);
+          var igUrl = safeHttps(r.instagram_url);
+          if (igUrl) {
+            var ig = action('a', 'Instagram', ICON.ig);
+            ig.btn.href = igUrl; ig.btn.target = '_blank'; ig.btn.rel = 'noopener noreferrer';
+            ig.btn.setAttribute('aria-label', 'Watch on Instagram');
+            side.appendChild(ig.btn);
+          }
+          stage.appendChild(side);
+          col.appendChild(stage);
+
+          // caption + button band (below the video)
+          var bottom = el('div', 'reel-bottom');
+          bottom.appendChild(el('div', 'reel-caption', r.caption));
+          var cta = el('button', 'reel-cta');
+          cta.type = 'button';
+          cta.appendChild(document.createTextNode(r.cta_text));
+          var arrow = el('span'); arrow.innerHTML = ICON.arrow; arrow.style.display = 'flex';
+          cta.appendChild(arrow);
+          cta.addEventListener('click', function () { onCta(r); });
+          bottom.appendChild(cta);
+          col.appendChild(bottom);
+
+          s.video = video; s.likeBtn = like.btn; s.likeLbl = like.lbl;
+          paintLike(r, s, false);
+          slide.appendChild(col);
+          scroller.appendChild(slide);
+          slides.push(s);
+        });
+
+        // which reel is on screen (>= 60% visible)
+        if (io) io.disconnect();
+        io = new IntersectionObserver(function (entries) {
+          entries.forEach(function (en) {
+            if (en.isIntersecting && en.intersectionRatio >= 0.6) {
+              activate(slides.findIndex(function (s) { return s.slide === en.target; }));
+            }
+          });
+        }, { root: scroller, threshold: [0.6] });
+        slides.forEach(function (s) { io.observe(s.slide); });
+        setProgress(0);
+      }
+
+      // ---- open / close ----
+      function openReels(fromHash) {
+        if (isOpen || !allReels.length) return;
+        isOpen = true; viaHash = fromHash === true;
+        section.classList.add('open');
+        document.body.classList.add('reels-open');
+        document.documentElement.style.overflow = 'hidden';
+        try { history[viaHash ? 'replaceState' : 'pushState']({ ttcReels: 1 }, '', '#reels'); } catch (e) {}
+        if (active >= 0) mount(active); else if (slides.length) activate(0);
+      }
+      function closeReels(fromPop) {
+        if (!isOpen) return;
+        isOpen = false;
+        section.classList.remove('open');
+        document.body.classList.remove('reels-open');
+        document.documentElement.style.overflow = '';
+        unmountAll(); // nothing plays once the section is closed
+        if (fromPop === true) return;
+        try {
+          if (viaHash) history.replaceState(null, '', location.pathname + location.search);
+          else if (history.state && history.state.ttcReels) history.back();
+        } catch (e) {}
+      }
+
+      // ---- activation / lazy iframe (only the reel on screen has an iframe) ----
+      function activate(i) {
+        if (i < 0 || !slides[i] || (i === active && slides[i].iframe)) return;
+        active = i;
+        slides.forEach(function (s, j) { if (j !== i) unmount(j); });
+        if (isOpen) mount(i);
+        setProgress(i);
+      }
+
+      function mount(i) {
+        var s = slides[i];
+        if (!s || s.iframe || !isOpen) return;
+        var id = reels[i].youtube_id;
+        var q = 'autoplay=1&mute=1&controls=0&loop=1&playlist=' + id +
+                '&playsinline=1&modestbranding=1&rel=0&enablejsapi=1&origin=' + encodeURIComponent(location.origin);
+        var f = document.createElement('iframe');
+        f.src = YT_ORIGIN + '/embed/' + id + '?' + q;
+        f.title = reels[i].title;
+        f.setAttribute('referrerpolicy', 'strict-origin-when-cross-origin');
+        f.setAttribute('allow', 'autoplay; encrypted-media; picture-in-picture');
+        f.setAttribute('allowfullscreen', '');
+        f.addEventListener('load', function () {
+          post(f, { event: 'listening' });
+          clearTimeout(s.showTimer);
+          s.showTimer = setTimeout(function () { markLoaded(s); }, 2200); // reveal even if no "playing" message arrives
+        });
+        s.iframe = f;
+        s.video.classList.remove('failed', 'loaded');
+        s.video.insertBefore(f, s.video.querySelector('.reel-fallback'));
+        s.failTimer = setTimeout(function () { if (!s.video.classList.contains('loaded')) fail(s); }, 12000);
+      }
+
+      function markLoaded(s) {
+        if (!s.iframe) return;
+        clearTimeout(s.failTimer); clearTimeout(s.showTimer);
+        s.video.classList.add('loaded');
+        if (!muted) { post(s.iframe, { event: 'command', func: 'unMute', args: [] }); post(s.iframe, { event: 'command', func: 'playVideo', args: [] }); }
+      }
+
+      function unmount(i) {
+        var s = slides[i];
+        if (!s) return;
+        clearTimeout(s.failTimer); clearTimeout(s.showTimer);
+        if (s.iframe) { s.iframe.remove(); s.iframe = null; }
+        s.video.classList.remove('loaded', 'failed');
+      }
+      function unmountAll() { slides.forEach(function (_, i) { unmount(i); }); }
+
+      function fail(s) {
+        clearTimeout(s.failTimer); clearTimeout(s.showTimer);
+        if (s.iframe) { s.iframe.remove(); s.iframe = null; }
+        s.video.classList.add('failed');
+      }
+
+      function onYtMessage(ev) {
+        if (ev.origin !== YT_ORIGIN) return;
+        var s = null;
+        for (var i = 0; i < slides.length; i++) {
+          if (slides[i].iframe && slides[i].iframe.contentWindow === ev.source) { s = slides[i]; break; }
+        }
+        if (!s) return;
+        var d = ev.data;
+        if (typeof d === 'string') { try { d = JSON.parse(d); } catch (e) { return; } }
+        if (!d) return;
+        if (d.event === 'onError') { fail(s); return; }
+        var st = null;
+        if (d.event === 'onStateChange') st = d.info;
+        else if (d.event === 'infoDelivery' && d.info && typeof d.info.playerState === 'number') st = d.info.playerState;
+        if (st === 1) markLoaded(s);
+        else if (st === 2 && isOpen) post(s.iframe, { event: 'command', func: 'playVideo', args: [] }); // never stay paused
+      }
+
+      function post(f, msg) {
+        try { f.contentWindow.postMessage(JSON.stringify(msg), YT_ORIGIN); } catch (e) {}
+      }
+
+      // ---- sound ----
+      function toggleSound() {
+        muted = !muted;
+        section.classList.toggle('sound-on', !muted);
+        var s = slides[active];
+        if (s && s.iframe) {
+          post(s.iframe, { event: 'command', func: muted ? 'mute' : 'unMute', args: [] });
+          if (!muted) post(s.iframe, { event: 'command', func: 'playVideo', args: [] });
+        }
+      }
+
+      function setProgress(i) { fillEl.style.width = (slides.length ? (i + 1) / slides.length * 100 : 0) + '%'; }
+
+      // ---- the button: opens this chapter's quiz if a link is set, otherwise the enquiry form ----
+      function onCta(r) {
+        var link = resolveLink(r.cta_url);
+        if (!link) { goContact(r); return; }
+        var same = false;
+        try { same = new URL(link).origin === location.origin; } catch (e) {}
+        if (same) location.href = link; else window.open(link, '_blank', 'noopener');
+      }
+
+      function buildContact() {
+        var seen = {};
+        allReels.forEach(function (r) {
+          var k = r.title.trim().toLowerCase();
+          if (seen[k]) return;
+          seen[k] = 1;
+          var o = document.createElement('option');
+          o.value = r.title.trim(); o.textContent = r.title.trim();
+          bizSelect.appendChild(o);
+        });
+        if (!seen['other']) {
+          var other = document.createElement('option');
+          other.value = 'Other'; other.textContent = 'Other';
+          bizSelect.appendChild(other);
+        }
+        document.getElementById('contactForm').addEventListener('submit', function (e) {
+          e.preventDefault();
+          var name = document.getElementById('contactName').value.trim();
+          var phone = document.getElementById('contactPhone').value.trim();
+          var what = bizSelect.value === 'Other' ? 'your classes' : bizSelect.value + ' classes';
+          var msg = 'Hello! I am ' + name + '. I want to know about ' + what + ' at Tushar Tuition Classes' +
+                    (enquiryClass ? ' (' + enquiryClass + ')' : '') + '.' +
+                    (phone ? ' Parent phone: ' + phone : '');
+          window.open('https://wa.me/' + CONTACT_PHONE + '?text=' + encodeURIComponent(msg), '_blank', 'noopener');
+        });
+      }
+
+      function goContact(r) {
+        var want = String(r.title || '').trim().toLowerCase();
+        var pick = 'Other';
+        for (var i = 0; i < bizSelect.options.length; i++) {
+          if (bizSelect.options[i].value.toLowerCase() === want) { pick = bizSelect.options[i].value; break; }
+        }
+        bizSelect.value = pick;
+        enquiryClass = selected !== 'all' ? labelFor(selected) : r.classes.map(labelFor).join(', ');
+        closeReels();
+        setTimeout(function () { contactEl.scrollIntoView({ behavior: 'smooth', block: 'start' }); }, 220);
+      }
+    })();
+  </script>
+  <script>
+    // --- 6. BOTTOM NAV ---
+    (function () {
+      var nav = document.getElementById('bottomNav');
+      if (!nav) return;
+      var items = Array.prototype.slice.call(nav.querySelectorAll('.nav-item[data-target]'));
+      var reduce = window.matchMedia && matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+      function targetEl(key) { return key === 'top' ? null : document.getElementById(key); }
+
+      function reelsApi() { return window.TTCReels || null; }
+
+      items.forEach(function (it) {
+        it.addEventListener('click', function () {
+          var key = it.getAttribute('data-target');
+          if (key === 'reels') { if (reelsApi()) reelsApi().open(); return; }
+          var behavior = reduce ? 'auto' : 'smooth';
+          function go() {
+            if (key === 'top') { window.scrollTo({ top: 0, behavior: behavior }); return; }
+            var el = targetEl(key);
+            if (!el) return;
+            var y = el.getBoundingClientRect().top + window.pageYOffset;
+            // quizzes sit under the sticky header
+            if (key === 'quizzes') y -= (document.querySelector('header') || { offsetHeight: 0 }).offsetHeight + 8;
+            window.scrollTo({ top: Math.max(0, y), behavior: behavior });
+          }
+          if (reelsApi() && reelsApi().isOpen()) { reelsApi().close(); setTimeout(go, 220); } else go();
+        });
+      });
+
+      // highlight whichever section is under the middle of the screen
+      var ticking = false;
+      function update() {
+        ticking = false;
+        var probe = window.innerHeight * 0.5, current = items[0], best = -Infinity;
+        items.forEach(function (it) {
+          var key = it.getAttribute('data-target');
+          if (key === 'top' || it.offsetParent === null) return;
+          var el = targetEl(key);
+          if (!el || el.offsetParent === null) return; // hidden sections report top 0
+          var top = el.getBoundingClientRect().top;
+          if (top <= probe && top > best) { best = top; current = it; }
+        });
+        if (document.body.classList.contains('reels-open')) current = nav.querySelector('.nav-reels') || current;
+        var atBottom = window.innerHeight + window.pageYOffset >= document.documentElement.scrollHeight - 4;
+        if (atBottom && !document.body.classList.contains('reels-open')) { var c = nav.querySelector('[data-target="contact"]'); if (c) current = c; }
+        items.forEach(function (it) { it.classList.toggle('active', it === current); });
+      }
+      window.addEventListener('scroll', function () {
+        if (!ticking) { ticking = true; requestAnimationFrame(update); }
+      }, { passive: true });
+      window.addEventListener('resize', update);
+      // reels appear after the API answers, which changes the layout without a scroll event
+      new MutationObserver(function () { requestAnimationFrame(update); })
+        .observe(document.body, { attributes: true, attributeFilter: ['class'] });
+      update();
+    })();
+  </script>
+</body>
+</html>
